@@ -1269,22 +1269,25 @@ div#main.loading:after {
   margin: 60px auto 0;
   display: block;
 }
-body.cs_page div#cs_page {
-  background-image: url("images/moles_01_bg_tile.jpg");
-  background-repeat: repeat;
+body.pages div.pages {
   color: #f00;
   height: 100%;
 }
-body.cs_page div#cs_page div.cs_logo {
+body.pages div.pages div.logo {
   width: 100px;
   height: 160px;
   background-image: url("images/sprite.png");
-  background-position: -99px -2px;
   position: absolute;
   top: 0px;
   left: 40px;
 }
-body.cs_page div#cs_page div.splash {
+body.pages div.pages div.logo.cs {
+  background-position: -99px -2px;
+}
+body.pages div.pages div.logo.hlc {
+  background-position: -1px -2px;
+}
+body.pages div.pages div.splash {
   background-image: url("images/somos_como_santas.png");
   height: 728px;
   width: 682px;
@@ -1293,6 +1296,84 @@ body.cs_page div#cs_page div.splash {
   margin-top: -364px;
   left: 50%;
   margin-left: -341px;
+}
+body.pages div.pages.cs {
+  background-image: url("images/moles_01_bg_tile.jpg");
+  background-repeat: repeat;
+}
+body.pages div.pages.hlc {
+  background-image: url("images/green_bg.jpg");
+  background-repeat: repeat;
+}
+body.pages div.pages.hlc div.menu {
+  height: 230px;
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  margin-top: -115px;
+}
+body.pages div.pages.hlc div.menu ul {
+  height: 230px;
+  width: 100%;
+}
+body.pages div.pages.hlc div.menu ul li {
+  width: 237px;
+  height: 230px;
+  position: absolute;
+}
+body.pages div.pages.hlc div.menu ul li a {
+  background-image: url("images/sprite2.png");
+  height: 160px;
+  width: 236px;
+  display: block;
+  position: relative;
+  text-indent: -999999px;
+}
+body.pages div.pages.hlc div.menu ul li a span {
+  position: absolute;
+  bottom: -90px;
+  display: block;
+  background-image: url("images/sprite.png");
+  height: 70px;
+  width: 220px;
+}
+body.pages div.pages.hlc div.menu ul li a span.option {
+  background-position: -90px -157px;
+}
+body.pages div.pages.hlc div.menu ul li a span.name {
+  width: 170px;
+  height: 40px;
+  left: 30px;
+  bottom: -86px;
+}
+body.pages div.pages.hlc div.menu ul li.home {
+  left: 0px;
+}
+body.pages div.pages.hlc div.menu ul li.home a {
+  background-position: 0px 0px;
+}
+body.pages div.pages.hlc div.menu ul li.home a span.name {
+  background-position: -629px -360px;
+}
+body.pages div.pages.hlc div.menu ul li.lenc {
+  left: 50%;
+  margin-left: -119px;
+}
+body.pages div.pages.hlc div.menu ul li.lenc a {
+  background-position: -238px 0px;
+}
+body.pages div.pages.hlc div.menu ul li.lenc a span.name {
+  background-position: -592px -326px;
+}
+body.pages div.pages.hlc div.menu ul li.cass {
+  right: 0px;
+}
+body.pages div.pages.hlc div.menu ul li.cass a {
+  background-position: -477px 0px;
+}
+body.pages div.pages.hlc div.menu ul li.cass a span.name {
+  background-position: -584px -290px;
 }
 body {
   background: url("images/bg-top.jpg") no-repeat center center fixed;

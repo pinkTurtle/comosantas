@@ -8,15 +8,12 @@ Template Name: Como Santas
   <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" type="text/css" />
 
 </head>
-<body class="cs_page">
-<div id="cs_page">
-  <div class="cs_logo"></div>
+<body class="cs pages">
+<div class="cs pages">
+  <div class="cs logo"></div>
 
   <div class="splash"></div>
 
-
 </div>
-
-
 
 </body>

@@ -62,20 +62,21 @@ div#main.loading
     margin: 60px auto 0
     display: block
 
-body.cs_page
-  div#cs_page
-    background-image: url('images/moles_01_bg_tile.jpg')
-    background-repeat: repeat
+body.pages
+  div.pages
     color: red
     height: 100%
-    div.cs_logo
+    div.logo
       width: 100px
       height: 160px
       background-image: url('images/sprite.png')
-      background-position: -99px -2px
       position: absolute
       top: 0px
       left: 40px
+      &.cs
+        background-position: -99px -2px
+      &.hlc
+        background-position: -1px -2px
     div.splash
       background-image: url('images/somos_como_santas.png')
       height: 728px
@@ -85,6 +86,69 @@ body.cs_page
       margin-top: -364px
       left: 50%
       margin-left: -341px
+    &.cs
+      background-image: url('images/moles_01_bg_tile.jpg')
+      background-repeat: repeat
+    &.hlc
+      background-image: url('images/green_bg.jpg')
+      background-repeat: repeat
+      div.menu
+        height: 230px
+        width: 80%
+        position: absolute
+        top:50%
+        left: 10%
+        margin-top: -115px
+        ul
+          height: 230px
+          width: 100%
+          li
+            width: 237px
+            height: 230px
+            position: absolute
+            a
+              background-image: url('images/sprite2.png')
+              height: 160px
+              width: 236px
+              display: block
+              position: relative
+              text-indent: -999999px
+              span
+                position: absolute
+                bottom: -90px
+                display: block
+                background-image: url('images/sprite.png')
+                height: 70px
+                width: 220px
+                &.option
+                  background-position: -90px -157px
+                &.name
+                  width: 170px
+                  height: 40px
+                  left: 30px
+                  bottom: -86px
+            &.home
+              left: 0px
+              a
+                background-position: 0px 0px
+                span.name
+                  background-position: -629px -360px
+            &.lenc
+              left: 50%
+              margin-left: -119px
+              a
+                background-position: -238px 0px
+                span.name
+                  background-position: -592px -326px
+            &.cass
+              right: 0px
+              a
+                background-position: -477px 0px
+                span.name
+                  background-position: -584px -290px
+
+
+
 
 body
   background: url('images/bg-top.jpg') no-repeat center center fixed

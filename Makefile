@@ -1,3 +1,6 @@
+
+WP_THEME=website/wp-content/themes/comosantas
+
 all:
 	clear
 	make css
@@ -13,11 +16,12 @@ install:
 html:
 	jade sources/views/index.jade -O website/
 
+
 css:
-	stylus sources/styles/main.styl -o website/css/
+	stylus sources/styles/style.styl -o $(WP_THEME)
 
 js:
-	bash compiler.sh
+	cd sources/javascript; make build; cp build/build.js ../../$(WP_THEME)/js/main.js
 
 clean-js:
 	rm -fr sources/javascript/build sources/javascript/components sources/javascript/template.js

@@ -9,7 +9,9 @@ Template Name: Homewear, Lenceria y Casual
 </head>
 <body class="hlc pages">
 <div class="hlc pages">
-  <div class="hlc logo"></div>
+  <div class="hlc logo">
+    <a href="<?php echo get_bloginfo('url'); ?>"></a>
+  </div>
 
   <div class="menu">
     <ul>

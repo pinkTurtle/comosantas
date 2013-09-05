@@ -10,7 +10,9 @@ Template Name: Pagina inicial
 <body class="init pages">
 <div class="init pages">
   <?php wp_nav_menu( array( 'theme_location' => 'primario', 'menu_class' => 'nav-menu' ) ); ?>
-  <div class="init logo"></div>
+<div class="init logo">
+  <a href="<?php echo get_bloginfo('url'); ?>"></a>
+</div>
 
 </div>
 

@@ -10,7 +10,9 @@ Template Name: Como Santas
 </head>
 <body class="cs pages">
 <div class="cs pages">
-  <div class="cs logo"></div>
+  <div class="cs logo">
+    <a href="<?php echo get_bloginfo('url'); ?>"></a>
+  </div>
 
   <div class="splash"></div>
 

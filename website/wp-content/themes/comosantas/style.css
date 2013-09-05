@@ -1286,6 +1286,11 @@ body.pages div.pages div.logo {
   top: 0px;
   left: 40px;
 }
+body.pages div.pages div.logo a {
+  width: 84%;
+  height: 87%;
+  display: block;
+}
 body.pages div.pages div.logo.cs {
   background-position: -99px -2px;
 }

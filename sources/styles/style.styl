@@ -63,6 +63,8 @@ div#main.loading
     display: block
 
 body.pages
+  *
+    box-sizing: border-box
   div.pages
     color: red
     height: 100%
@@ -93,57 +95,54 @@ body.pages
       background-image: url('images/green_bg.jpg')
       background-repeat: repeat
       div.menu
+        width: 100%
         height: 230px
-        width: 80%
         position: absolute
         top:50%
-        left: 10%
+        left: 0px
         margin-top: -115px
         ul
           height: 230px
           width: 100%
           li
-            width: 237px
+            width: 33.33%
             height: 230px
-            position: absolute
+            display: inline-block
+            float: left
             a
               background-image: url('images/sprite2.png')
               height: 160px
               width: 236px
               display: block
-              position: relative
               text-indent: -999999px
+              margin: 0px auto
               span
-                position: absolute
-                bottom: -90px
+                position: relative
                 display: block
                 background-image: url('images/sprite.png')
                 height: 70px
                 width: 220px
                 &.option
+                  margin-top: 140px
                   background-position: -90px -157px
                 &.name
+                  top: 28px
+                  left: 30px
                   width: 170px
                   height: 40px
-                  left: 30px
-                  bottom: -86px
             &.home
-              left: 0px
               a
                 background-position: 0px 0px
                 span.name
                   background-position: -629px -360px
             &.lenc
-              left: 50%
-              margin-left: -119px
               a
-                background-position: -238px 0px
+                background-position: -238px -3px
                 span.name
                   background-position: -592px -326px
             &.cass
-              right: 0px
               a
-                background-position: -477px 0px
+                background-position: -477px -6px
                 span.name
                   background-position: -584px -290px
 

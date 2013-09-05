@@ -6,7 +6,6 @@ Template Name: Homewear, Lenceria y Casual
 
 <head>
   <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" type="text/css" />
-
 </head>
 <body class="hlc pages">
 <div class="hlc pages">

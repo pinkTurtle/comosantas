@@ -11,7 +11,6 @@ Template Name: Como Santas
 <body class="cs_page">
 <div id="cs_page">
   <div class="cs_logo"></div>
-  <h1>Somo Como Santas</h1>
 
   <div class="splash"></div>
 

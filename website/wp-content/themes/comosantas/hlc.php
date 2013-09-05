@@ -15,7 +15,7 @@ Template Name: Homewear, Lenceria y Casual
   <div class="menu">
     <ul>
       <li class="home">
-        <a href="#">Homewear and pj's
+        <a href="#">Homewear and pjs
           <span class="option"></span><span class="name"></span>
         </a>
       </li>

@@ -1305,7 +1305,6 @@ body.pages * {
   box-sizing: border-box;
 }
 body.pages div.pages {
-  color: #f00;
   height: 100%;
 }
 body.pages div.pages div.logo {
@@ -1321,7 +1320,7 @@ body.pages div.pages div.logo a {
   height: 87%;
   display: block;
 }
-body.pages div.pages div.logo.cs {
+body.pages div.pages div.logo.manifesto {
   background-position: -99px -2px;
 }
 body.pages div.pages div.logo.hlc {
@@ -1344,7 +1343,7 @@ body.pages div.pages div.splash {
   left: 50%;
   margin-left: -341px;
 }
-body.pages div.pages.cs {
+body.pages div.pages.manifesto {
   background-image: url("images/moles_01_bg_tile.jpg");
   background-repeat: repeat;
 }

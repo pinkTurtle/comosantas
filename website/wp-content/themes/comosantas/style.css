@@ -1325,6 +1325,7 @@ body.pages div.pages div.logo.manifesto {
   background-position: -99px -2px;
 }
 body.pages div.pages div.logo.lookbook,
+body.pages div.pages div.logo.quienes-somos,
 body.pages div.pages div.logo.contacto {
   background-position: -1px -2px;
 }
@@ -1348,6 +1349,30 @@ body.pages div.pages div.splash {
 body.pages div.pages.manifesto {
   background-image: url("images/moles_01_bg_tile.jpg");
   background-repeat: repeat;
+}
+body.pages div.pages.quienes-somos {
+  background-image: url("images/olympus_bg_mid.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+body.pages div.pages.quienes-somos div.quienes {
+  width: 500px;
+  height: 440px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -220px;
+  margin-left: -250px;
+  overflow-y: scroll;
+  background-color: rgba(255,255,255,0.3);
+  border: 3px solid #000;
+}
+body.pages div.pages.quienes-somos div.quienes p {
+  text-align: justify;
+  font: 19px/25px arial;
+  padding: 10px 15px;
 }
 body.pages div.pages.contacto {
   background-image: url("images/maquina_mid.jpg");

@@ -208,6 +208,36 @@ table {
   border-spacing: 0;
 }
 /* commons */
+@font-face {
+  font-family: 'amatic-regular';
+  src: url("fonts/AmaticSC-Regular.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'amatic-bold';
+  src: url("fonts/AmaticSC-Bold.ttf") format('truetype');
+  font-weight: normal;
+  font-style: bold;
+}
+@font-face {
+  font-family: 'waitingsunrise';
+  src: url("fonts/WaitingfortheSunrise.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'cabin-regular';
+  src: url("fonts/CabinRegular.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'cabin-bold';
+  src: url("fonts/Cabin-Bold.ttf") format('truetype');
+  font-weight: normal;
+  font-style: bold;
+}
 body {
   font: normal 12px/21px $regular;
   color: $text_color;
@@ -745,7 +775,7 @@ a.menu-button:hover span:after {
 }
 input[type="submit"].button-light,
 a.link-button-light {
-  font: normal 27px "camingodos-web-1", "camingodos-web-2", sans-serif;
+  font: normal 27px $main-font;
   text-transform: uppercase;
   background-color: rgba(255,255,255,0.5);
   color: $gray;
@@ -1325,6 +1355,7 @@ body.pages div.pages.init div.menu-comosantas-container {
   color: #00f;
 }
 body.pages div.pages.init div.menu-comosantas-container ul.nav-menu {
+  font: normal 18px cabin-bold;
   margin-top: 80px;
   background-color: #80cbb6;
   height: 36px;
@@ -1333,7 +1364,26 @@ body.pages div.pages.init div.menu-comosantas-container ul.nav-menu {
 body.pages div.pages.init div.menu-comosantas-container ul.nav-menu li {
   width: 24.5%;
   display: inline-block;
-  text-align: center;
+}
+body.pages div.pages.init div.menu-comosantas-container ul.nav-menu li a {
+  color: #fff;
+  text-transform: uppercase;
+}
+body.pages div.pages.init div.menu-comosantas-container ul.nav-menu li:nth-child(1),
+body.pages div.pages.init div.menu-comosantas-container ul.nav-menu li:nth-child(2) {
+  text-align: left;
+}
+body.pages div.pages.init div.menu-comosantas-container ul.nav-menu li:nth-child(1) a,
+body.pages div.pages.init div.menu-comosantas-container ul.nav-menu li:nth-child(2) a {
+  margin-left: 10%;
+}
+body.pages div.pages.init div.menu-comosantas-container ul.nav-menu li:nth-child(3),
+body.pages div.pages.init div.menu-comosantas-container ul.nav-menu li:nth-child(4) {
+  text-align: right;
+}
+body.pages div.pages.init div.menu-comosantas-container ul.nav-menu li:nth-child(3) a,
+body.pages div.pages.init div.menu-comosantas-container ul.nav-menu li:nth-child(4) a {
+  margin-right: 10%;
 }
 body.pages div.pages.hlc {
   background-image: url("images/green_bg.jpg");

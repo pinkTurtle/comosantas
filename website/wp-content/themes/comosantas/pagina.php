@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Manifesto
+Template Name: Pagina Como Santas
 */
 ?>
 

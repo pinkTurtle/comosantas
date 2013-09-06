@@ -1305,6 +1305,7 @@ body.pages * {
   box-sizing: border-box;
 }
 body.pages div.pages {
+  padding-top: 1px;
   height: 100%;
 }
 body.pages div.pages div.logo {
@@ -1323,7 +1324,8 @@ body.pages div.pages div.logo a {
 body.pages div.pages div.logo.manifesto {
   background-position: -99px -2px;
 }
-body.pages div.pages div.logo.lookbook {
+body.pages div.pages div.logo.lookbook,
+body.pages div.pages div.logo.contacto {
   background-position: -1px -2px;
 }
 body.pages div.pages div.logo.init {
@@ -1346,6 +1348,34 @@ body.pages div.pages div.splash {
 body.pages div.pages.manifesto {
   background-image: url("images/moles_01_bg_tile.jpg");
   background-repeat: repeat;
+}
+body.pages div.pages.contacto {
+  background-image: url("images/maquina_mid.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+body.pages div.pages.contacto ul {
+  margin: 200px auto 40px;
+  width: 186px;
+}
+body.pages div.pages.contacto ul li {
+  width: 25px;
+  height: 25px;
+  background-image: url("images/sprite.png");
+  background-position: 0px -207px;
+  display: inline-block;
+  margin-right: 50px;
+}
+body.pages div.pages.contacto ul li:last-child {
+  margin: 0px;
+}
+body.pages div.pages.contacto p {
+  font: 40px/22px waitingsunrise;
+  color: #fff;
+  line-height: 20px;
+  text-align: center;
 }
 body.pages div.pages.init {
   background-image: none;

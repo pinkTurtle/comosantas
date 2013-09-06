@@ -66,6 +66,7 @@ body.pages
   *
     box-sizing: border-box
   div.pages
+    padding-top: 1px
     height: 100%
     div.logo
       width: 98px
@@ -80,7 +81,8 @@ body.pages
         display: block
       &.manifesto
         background-position: -99px -2px
-      &.lookbook
+      &.lookbook,
+      &.contacto
         background-position: -1px -2px
       &.init
         width: 120px
@@ -100,6 +102,27 @@ body.pages
     &.manifesto
       background-image: url('images/moles_01_bg_tile.jpg')
       background-repeat: repeat
+    &.contacto
+      background-image: url('images/maquina_mid.jpg')
+      background-repeat: no-repeat
+      background-size: cover
+      ul
+        margin: 200px auto 40px
+        width: 186px
+        li
+          width: 25px
+          height: 25px
+          background-image: url('images/sprite.png')
+          background-position: 0px -207px
+          display: inline-block
+          margin-right: 50px
+          &:last-child
+            margin: 0px
+      p
+        font: 40px/22px waitingsunrise
+        color: white
+        line-height: 20px
+        text-align: center
     &.init
       background-image: none
       div.menu-comosantas-container

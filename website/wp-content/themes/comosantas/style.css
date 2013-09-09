@@ -1324,10 +1324,14 @@ body.pages div.pages div.logo a {
 body.pages div.pages div.logo.manifesto {
   background-position: -99px -2px;
 }
-body.pages div.pages div.logo.home-and-pjs,
-body.pages div.pages div.logo.lenceria,
-body.pages div.pages div.logo.casual {
+body.pages div.pages div.logo.home-and-pjs {
   background-position: -408px -2px;
+}
+body.pages div.pages div.logo.lenceria {
+  background-position: -305px -2px;
+}
+body.pages div.pages div.logo.casual {
+  background-position: -202px -2px;
 }
 body.pages div.pages div.logo.lookbook,
 body.pages div.pages div.logo.quienes-somos,
@@ -1571,10 +1575,10 @@ body.pages div.pages.home-and-pjs {
   background-image: url("images/heart_01_bg_tile.jpg");
 }
 body.pages div.pages.casual {
-  background-image: url("images/heart_02_bg_tile.jpg");
+  background-image: url("images/heart_03_bg_tile.jpg");
 }
 body.pages div.pages.lenceria {
-  background-image: url("images/heart_03_bg_tile.jpg");
+  background-image: url("images/heart_02_bg_tile.jpg");
 }
 body {
   background: url("images/bg-top.jpg") no-repeat center center fixed;

@@ -1324,6 +1324,11 @@ body.pages div.pages div.logo a {
 body.pages div.pages div.logo.manifesto {
   background-position: -99px -2px;
 }
+body.pages div.pages div.logo.home-and-pjs,
+body.pages div.pages div.logo.lenceria,
+body.pages div.pages div.logo.casual {
+  background-position: -408px -2px;
+}
 body.pages div.pages div.logo.lookbook,
 body.pages div.pages div.logo.quienes-somos,
 body.pages div.pages div.logo.contacto {
@@ -1373,6 +1378,7 @@ body.pages div.pages.quienes-somos div.quienes p {
   text-align: justify;
   font: 19px/25px arial;
   padding: 10px 15px;
+  margin: 0px;
 }
 body.pages div.pages.contacto {
   background-image: url("images/maquina_mid.jpg");
@@ -1401,6 +1407,7 @@ body.pages div.pages.contacto p {
   color: #fff;
   line-height: 20px;
   text-align: center;
+  text-shadow: 3px 3px rgba(0,0,0,0.3);
 }
 body.pages div.pages.init {
   background-image: none;
@@ -1438,6 +1445,41 @@ body.pages div.pages.init div.menu-comosantas-container ul.nav-menu li:nth-child
 body.pages div.pages.init div.menu-comosantas-container ul.nav-menu li:nth-child(3) a,
 body.pages div.pages.init div.menu-comosantas-container ul.nav-menu li:nth-child(4) a {
   margin-right: 10%;
+}
+body.pages div.pages.init div.site_logo {
+  width: 276px;
+  height: 135px;
+  background-image: url("images/sprite.png");
+  background-position: -3px -254px;
+  float: right;
+}
+body.pages div.pages.init ul.contact_menu {
+  width: 250px;
+}
+body.pages div.pages.init ul.contact_menu li {
+  float: left;
+  width: 55px;
+  height: 55px;
+  background-image: url("images/sprite.png");
+  margin-right: 30px;
+  text-indent: -99999px;
+}
+body.pages div.pages.init ul.contact_menu li a {
+  display: block;
+  width: 71%;
+  height: 74%;
+}
+body.pages div.pages.init ul.contact_menu li:last-child {
+  margin-right: 0px;
+}
+body.pages div.pages.init ul.contact_menu li.fb {
+  background-position: -745px -2px;
+}
+body.pages div.pages.init ul.contact_menu li.ma {
+  background-position: -745px -58px;
+}
+body.pages div.pages.init ul.contact_menu li.te {
+  background-position: -745px -114px;
 }
 body.pages div.pages.lookbook {
   background-image: url("images/green_bg.jpg");
@@ -1503,6 +1545,28 @@ body.pages div.pages.lookbook div.menu ul li.cass a {
 }
 body.pages div.pages.lookbook div.menu ul li.cass a span.name {
   background-position: -584px -290px;
+}
+body.pages div.pages.lenceria,
+body.pages div.pages.casual,
+body.pages div.pages.home-and-pjs {
+  background-image: url("images/heart_01_bg_tile.jpg");
+  background-repeat: repeat;
+}
+body.pages div.pages.lenceria div.lookbook_logo,
+body.pages div.pages.casual div.lookbook_logo,
+body.pages div.pages.home-and-pjs div.lookbook_logo {
+  height: 77px;
+  width: 410px;
+  margin: 123px auto 30px;
+  background-image: url("images/sprite.png");
+  background-position: -377px -208px;
+}
+body.pages div.pages.lenceria div.lookbook_logo a,
+body.pages div.pages.casual div.lookbook_logo a,
+body.pages div.pages.home-and-pjs div.lookbook_logo a {
+  display: block;
+  height: 100%;
+  width: 100%;
 }
 body {
   background: url("images/bg-top.jpg") no-repeat center center fixed;

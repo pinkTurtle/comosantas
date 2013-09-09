@@ -21,8 +21,15 @@ $slug = $post->post_name;
   <div class="logo <?php echo $slug; ?>">
     <a href="<?php echo get_bloginfo('url'); ?>"></a>
   </div>
-
-  <?php
+<?php
+if (13 == $post->post_parent) {
+?>
+  <div class="lookbook_logo">
+  <a href="<?php echo get_bloginfo('url'); ?>/lookbook/">
+  </a>
+  </div>
+<?php
+}
     echo $post->post_content;
   ?> 
 

@@ -81,6 +81,10 @@ body.pages
         display: block
       &.manifesto
         background-position: -99px -2px
+      &.home-and-pjs,
+      &.lenceria,
+      &.casual
+        background-position: -408px -2px
       &.lookbook,
       &.quienes-somos,
       &.contacto
@@ -122,6 +126,7 @@ body.pages
           text-align: justify
           font: 19px/25px arial;
           padding: 10px 15px
+          margin: 0px
 
     &.contacto
       background-image: url('images/maquina_mid.jpg')
@@ -144,6 +149,7 @@ body.pages
         color: white
         line-height: 20px
         text-align: center
+        text-shadow: 3px 3px rgba(0, 0, 0, 0.3);
     &.init
       background-image: none
       div.menu-comosantas-container
@@ -170,6 +176,33 @@ body.pages
               text-align: right
               a
                 margin-right: 10%
+      div.site_logo
+        width: 276px
+        height: 135px
+        background-image: url('images/sprite.png')
+        background-position: -3px -254px
+        float: right
+      ul.contact_menu
+        width: 250px
+        li
+          a
+            display: block
+            width: 71%
+            height: 74%
+          float: left
+          width: 55px
+          height: 55px
+          background-image: url('images/sprite.png')
+          margin-right: 30px
+          text-indent: -99999px
+          &:last-child
+            margin-right: 0px
+          &.fb
+            background-position: -745px -2px
+          &.ma
+            background-position: -745px -58px
+          &.te
+            background-position: -745px -114px
 
     &.lookbook
       background-image: url('images/green_bg.jpg')
@@ -225,9 +258,21 @@ body.pages
                 background-position: -477px -6px
                 span.name
                   background-position: -584px -290px
-
-
-
+    &.lenceria,
+    &.casual,
+    &.home-and-pjs
+      background-image: url('images/heart_01_bg_tile.jpg')
+      background-repeat: repeat
+      div.lookbook_logo
+        height: 77px
+        width: 410px
+        margin: 123px auto 30px
+        background-image: url('images/sprite.png')
+        background-position: -377px -208px
+        a
+          display: block
+          height: 100%
+          width: 100%
 
 body
   background: url('images/bg-top.jpg') no-repeat center center fixed

@@ -1549,7 +1549,6 @@ body.pages div.pages.lookbook div.menu ul li.cass a span.name {
 body.pages div.pages.lenceria,
 body.pages div.pages.casual,
 body.pages div.pages.home-and-pjs {
-  background-image: url("images/heart_01_bg_tile.jpg");
   background-repeat: repeat;
 }
 body.pages div.pages.lenceria div.lookbook_logo,
@@ -1567,6 +1566,15 @@ body.pages div.pages.home-and-pjs div.lookbook_logo a {
   display: block;
   height: 100%;
   width: 100%;
+}
+body.pages div.pages.home-and-pjs {
+  background-image: url("images/heart_01_bg_tile.jpg");
+}
+body.pages div.pages.casual {
+  background-image: url("images/heart_02_bg_tile.jpg");
+}
+body.pages div.pages.lenceria {
+  background-image: url("images/heart_03_bg_tile.jpg");
 }
 body {
   background: url("images/bg-top.jpg") no-repeat center center fixed;

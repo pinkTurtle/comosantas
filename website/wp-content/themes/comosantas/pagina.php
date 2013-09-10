@@ -6,7 +6,21 @@ Template Name: Pagina Como Santas
 
 <head>
   <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" type="text/css" />
-
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+  <script src="<?php echo get_bloginfo('url'); ?>/wp-content/themes/comosantas/js/galleria-1.2.9.js"></script>
+<style>
+    #galleria { 
+      width: 595px;
+      height: 385px;
+      background: #fff;
+      margin: 20px auto;
+      border-top: 30px solid white;
+      border-left: 30px solid white;
+      border-right: 30px solid white;
+      -moz-box-sizing: content-box;
+      box-sizing: content-box;
+    }
+</style>
 </head>
 <?php
 
@@ -30,8 +44,18 @@ if (13 == $post->post_parent) {
   </div>
 <?php
 }
-    echo $post->post_content;
+    //echo $post->post_content;
   ?> 
+
+		<?php if ( have_posts() ) : ?>
+			<?php /* The loop */ ?>
+			<?php while ( have_posts() ) : the_post(); ?>
+				<?php get_template_part( 'content', get_post_format() ); ?>
+			<?php endwhile; ?>
+
+		<?php else : ?>
+			<?php get_template_part( 'content', 'none' ); ?>
+		<?php endif; ?>
 
 </div>
 

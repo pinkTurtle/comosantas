@@ -151,7 +151,7 @@ body.pages
         color: white
         line-height: 20px
         text-align: center
-        text-shadow: 3px 3px rgba(0, 0, 0, 0.3);
+        text-shadow: 3px 3px 7px black;
     &.init
       background-image: none
       div.menu-comosantas-container
@@ -183,9 +183,13 @@ body.pages
         height: 135px
         background-image: url('images/sprite.png')
         background-position: -3px -254px
-        float: right
+        position: absolute
+        top: 365px
+        right: 20px
+        z-index: 10
       ul.contact_menu
         width: 250px
+        margin-left: 40px
         li
           a
             display: block
@@ -230,6 +234,7 @@ body.pages
               width: 236px
               display: block
               text-indent: -999999px
+              font-size: 0px
               margin: 0px auto
               span
                 position: relative

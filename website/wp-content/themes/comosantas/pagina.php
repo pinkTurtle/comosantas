@@ -8,6 +8,8 @@ Template Name: Pagina Como Santas
   <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" type="text/css" />
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
   <script src="<?php echo get_bloginfo('url'); ?>/wp-content/themes/comosantas/js/galleria-1.2.9.js"></script>
+  <script src="<?php echo get_bloginfo('url'); ?>/wp-content/themes/comosantas/js/perfect-scrollbar.js"></script>
+  <script src="<?php echo get_bloginfo('url'); ?>/wp-content/themes/comosantas/js/jquery.mousewheel.js"></script>
 <style>
     #galleria { 
       width: 595px;
@@ -21,6 +23,24 @@ Template Name: Pagina Como Santas
       box-sizing: content-box;
     }
 </style>
+
+<script>
+jQuery(document).ready(function ($) {
+"use strict";
+$('#Default').perfectScrollbar();
+$('#FastWheelSpeed').perfectScrollbar({wheelSpeed:100});
+$('#SlowWheelSpeed').perfectScrollbar({wheelSpeed:1});
+
+$(".quienessomos").perfectScrollbar({
+  wheelSpeed: 20,
+  wheelPropagation: true,
+  minScrollbarLength: 20
+})
+
+
+});
+</script>
+
 </head>
 <?php
 

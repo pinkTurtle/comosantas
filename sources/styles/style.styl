@@ -62,6 +62,44 @@ div#main.loading
     margin: 60px auto 0
     display: block
 
+/* estilos para perfect scrollbar */
+/* fueron eliminados los estilos del 
+    scrollbar X, para que no sea visible */
+.ps-container
+  .ps-scrollbar-y
+    position: absolute
+    right: 3px
+    width: 8px
+    background-color: black
+    border-radius: 4px
+    opacity: 0
+    transition: opacity .2s linear
+    &.in-scrolling
+      opacity: 0.9
+  &.ie
+    .ps-scrollbar-y
+      font-size: 0
+
+.ps-container:hover .ps-scrollbar-x,
+.ps-container.hover .ps-scrollbar-x
+  opacity: 0.6
+
+.ps-container .ps-scrollbar-x:hover,
+.ps-container .ps-scrollbar-x.hover
+  opacity: 0.9
+  cursor: default
+
+.ps-container:hover .ps-scrollbar-y,
+.ps-container.hover .ps-scrollbar-y
+  opacity: 0.6
+
+.ps-container .ps-scrollbar-y:hover,
+.ps-container .ps-scrollbar-y.hover
+  opacity: 0.9
+  cursor: default
+
+/* fin estilos para perfect scrollbar */
+
 body.pages
   *
     box-sizing: border-box
@@ -113,7 +151,7 @@ body.pages
       background-image: url('images/olympus_bg_mid.jpg')
       background-repeat: no-repeat
       background-size: cover
-      div.quienes
+      div.quienessomos
         width: 500px
         height: 440px
         position: absolute
@@ -121,9 +159,9 @@ body.pages
         left: 50%
         margin-top: -220px
         margin-left: -250px
-        overflow-y: scroll
         background-color: rgba(255, 255, 255, 0.3);
         border: 3px solid black;
+        overflow: hidden
         p
           text-align: justify
           font: 19px/25px arial;

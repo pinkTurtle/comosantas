@@ -20,6 +20,9 @@ Template Name: Pagina inicial
     #galleria .galleria-bar{
       display: none;
     } 
+    #galleria .galleria-progress{
+      display: none;
+    } 
 </style>
 </head>
 <body class="init pages">

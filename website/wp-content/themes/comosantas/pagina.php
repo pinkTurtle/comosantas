@@ -22,6 +22,9 @@ Template Name: Pagina Como Santas
       -moz-box-sizing: content-box;
       box-sizing: content-box;
     }
+    #galleria .galleria-progress{
+      display: none;
+    } 
 </style>
 
 <script>

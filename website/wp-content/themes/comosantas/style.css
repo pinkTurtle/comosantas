@@ -1419,6 +1419,7 @@ body.pages div.pages.quienes-somos {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
+  background-position: center bottom;
 }
 body.pages div.pages.quienes-somos div.quienessomos {
   width: 500px;
@@ -1444,6 +1445,7 @@ body.pages div.pages.contacto {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
+  background-position: center center;
 }
 body.pages div.pages.contacto ul {
   margin: 200px auto 40px;

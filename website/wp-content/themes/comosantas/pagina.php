@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <?php
 /*
 Template Name: Pagina Como Santas

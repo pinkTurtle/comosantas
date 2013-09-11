@@ -1459,8 +1459,7 @@ body.pages div.pages.contacto ul li {
   display: inline-block;
   margin-right: 50px;
 }
-body.pages div.pages.contacto ul li.last,
-body.pages div.pages.contacto ul li:last-child {
+body.pages div.pages.contacto ul li.last {
   margin: 0px;
 }
 body.pages div.pages.contacto p {

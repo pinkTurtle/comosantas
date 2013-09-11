@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+
 <?php
 /*
 Template Name: Pagina inicial

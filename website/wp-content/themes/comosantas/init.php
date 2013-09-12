@@ -12,12 +12,12 @@ Template Name: Pagina inicial
   <script src="<?php echo get_bloginfo('url'); ?>/wp-content/themes/comosantas/js/galleria-1.2.9.js"></script>
 <style>
     #galleria { 
-      width: 100%;
       height: 320px;
       background: #fff;
       margin: 100px auto 20px;
       -moz-box-sizing: content-box;
       box-sizing: content-box;
+      width: auto;
     }
     #galleria .galleria-bar{
       display: none;
@@ -49,15 +49,16 @@ Template Name: Pagina inicial
     </div>
     <ul class="contact_menu">
       <li class="fb">
-        <a href="#">facebook
+        <a href="https://www.facebook.com/pages/Como-Santas/459426347444590"
+          target="_blank">facebook
         </a>
       </li>
       <li class="ma">
-        <a href="#">mail
+        <a href="mailto:comosantas@gmail.com">mail
         </a>
       </li>
       <li class="te">
-        <a href="#">phone
+        <a href="contacto">phone
         </a>
       </li>
     </ul>

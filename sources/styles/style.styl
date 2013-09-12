@@ -209,12 +209,16 @@ body.pages
             width: 24.5%
             display: inline-block
             &.menu-item-33,
-            &.menu-item-16
+            &.menu-item-16,
+            &:nth-child(1),
+            &:nth-child(2)
               text-align: left
               a
                 margin-left: 10%
             &.menu-item-28,
-            &.menu-item-34
+            &.menu-item-34,
+            &:nth-child(3),
+            &:nth-child(4)
               text-align: right
               a
                 margin-right: 10%
@@ -227,6 +231,18 @@ body.pages
         top: 365px
         right: 20px
         z-index: 10
+      div.guarda
+        height: 15px
+        width: 100%
+        background-repeat: repeat
+        position: absolute
+        z-index: 10
+        &.superior
+          background-image: url('images/guarda-sup.png')
+          top: 217px
+        &.inferior
+          background-image: url('images/guarda-inf.png')
+          top: 492px
       ul.contact_menu
         width: 260px
         margin-left: 40px

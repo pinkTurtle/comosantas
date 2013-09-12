@@ -1491,19 +1491,27 @@ body.pages div.pages.init div.menu-comosantas-container ul.nav-menu li a {
   text-transform: uppercase;
 }
 body.pages div.pages.init div.menu-comosantas-container ul.nav-menu li.menu-item-33,
-body.pages div.pages.init div.menu-comosantas-container ul.nav-menu li.menu-item-16 {
+body.pages div.pages.init div.menu-comosantas-container ul.nav-menu li.menu-item-16,
+body.pages div.pages.init div.menu-comosantas-container ul.nav-menu li:nth-child(1),
+body.pages div.pages.init div.menu-comosantas-container ul.nav-menu li:nth-child(2) {
   text-align: left;
 }
 body.pages div.pages.init div.menu-comosantas-container ul.nav-menu li.menu-item-33 a,
-body.pages div.pages.init div.menu-comosantas-container ul.nav-menu li.menu-item-16 a {
+body.pages div.pages.init div.menu-comosantas-container ul.nav-menu li.menu-item-16 a,
+body.pages div.pages.init div.menu-comosantas-container ul.nav-menu li:nth-child(1) a,
+body.pages div.pages.init div.menu-comosantas-container ul.nav-menu li:nth-child(2) a {
   margin-left: 10%;
 }
 body.pages div.pages.init div.menu-comosantas-container ul.nav-menu li.menu-item-28,
-body.pages div.pages.init div.menu-comosantas-container ul.nav-menu li.menu-item-34 {
+body.pages div.pages.init div.menu-comosantas-container ul.nav-menu li.menu-item-34,
+body.pages div.pages.init div.menu-comosantas-container ul.nav-menu li:nth-child(3),
+body.pages div.pages.init div.menu-comosantas-container ul.nav-menu li:nth-child(4) {
   text-align: right;
 }
 body.pages div.pages.init div.menu-comosantas-container ul.nav-menu li.menu-item-28 a,
-body.pages div.pages.init div.menu-comosantas-container ul.nav-menu li.menu-item-34 a {
+body.pages div.pages.init div.menu-comosantas-container ul.nav-menu li.menu-item-34 a,
+body.pages div.pages.init div.menu-comosantas-container ul.nav-menu li:nth-child(3) a,
+body.pages div.pages.init div.menu-comosantas-container ul.nav-menu li:nth-child(4) a {
   margin-right: 10%;
 }
 body.pages div.pages.init div.site_logo {
@@ -1515,6 +1523,21 @@ body.pages div.pages.init div.site_logo {
   top: 365px;
   right: 20px;
   z-index: 10;
+}
+body.pages div.pages.init div.guarda {
+  height: 15px;
+  width: 100%;
+  background-repeat: repeat;
+  position: absolute;
+  z-index: 10;
+}
+body.pages div.pages.init div.guarda.superior {
+  background-image: url("images/guarda-sup.png");
+  top: 217px;
+}
+body.pages div.pages.init div.guarda.inferior {
+  background-image: url("images/guarda-inf.png");
+  top: 492px;
 }
 body.pages div.pages.init ul.contact_menu {
   width: 260px;

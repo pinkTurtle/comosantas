@@ -648,7 +648,7 @@ a.big-button,
 a.small-button {
   display: block;
   color: #fff;
-  background-color: #505050;
+  background-color: $grey-medium;
   text-transform: uppercase;
   text-decoration: none;
   position: relative;
@@ -661,8 +661,8 @@ a.small-button {
 }
 a.big-button:hover,
 a.small-button:hover {
-  background-color: #9d4900;
-  color: #ff8a00;
+  background-color: $orange-dark;
+  color: $orange-light;
 }
 a.big-button:after,
 a.small-button:after {
@@ -700,7 +700,7 @@ a.big-button:before {
   z-index: 10;
 }
 a.small-button {
-  color: #ff8a00;
+  color: $orange-light;
   padding: 0px 45px 0px 20px;
   height: 40px;
   display: inline-block;
@@ -731,8 +731,8 @@ a.menu-button span {
   line-height: 48px;
   font-size: 14px;
   line-height: 50px;
-  background-color: #505050;
-  color: #ff8a00;
+  background-color: $grey-medium;
+  color: $orange-light;
   padding-left: 20px;
   -webkit-transition: background-color 200ms ease-in;
   -moz-transition: background-color 200ms ease-in;
@@ -766,7 +766,7 @@ a.menu-button span:after {
   filter: alpha(opacity=0);
 }
 a.menu-button:hover span {
-  background-color: #9d4900;
+  background-color: $orange-dark;
 }
 a.menu-button:hover span:after {
   opacity: 1;
@@ -1685,6 +1685,56 @@ body.pages div.pages.casual {
 }
 body.pages div.pages.lenceria {
   background-image: url("images/heart_02_bg_tile.jpg");
+}
+nav.main-navigation div.menu-comosantas-container {
+  color: #00f;
+}
+nav.main-navigation div.menu-comosantas-container ul.nav-menu {
+  font: normal 16px cabin-bold;
+  margin-top: 80px;
+  background-color: #80cbb6;
+  height: 36px;
+  line-height: 36px;
+}
+nav.main-navigation div.menu-comosantas-container ul.nav-menu li {
+  width: 24.5%;
+  display: inline-block;
+}
+nav.main-navigation div.menu-comosantas-container ul.nav-menu li a {
+  color: #fff;
+  text-transform: uppercase;
+}
+nav.main-navigation div.menu-comosantas-container ul.nav-menu li.menu-item-33,
+nav.main-navigation div.menu-comosantas-container ul.nav-menu li.menu-item-16 {
+  text-align: left;
+}
+nav.main-navigation div.menu-comosantas-container ul.nav-menu li.menu-item-33 a,
+nav.main-navigation div.menu-comosantas-container ul.nav-menu li.menu-item-16 a {
+  margin-left: 20%;
+}
+nav.main-navigation div.menu-comosantas-container ul.nav-menu li:nth-child(1),
+nav.main-navigation div.menu-comosantas-container ul.nav-menu li:nth-child(2) {
+  text-align: left;
+}
+nav.main-navigation div.menu-comosantas-container ul.nav-menu li:nth-child(1) a,
+nav.main-navigation div.menu-comosantas-container ul.nav-menu li:nth-child(2) a {
+  margin-left: 20%;
+}
+nav.main-navigation div.menu-comosantas-container ul.nav-menu li.menu-item-28,
+nav.main-navigation div.menu-comosantas-container ul.nav-menu li.menu-item-34 {
+  text-align: right;
+}
+nav.main-navigation div.menu-comosantas-container ul.nav-menu li.menu-item-28 a,
+nav.main-navigation div.menu-comosantas-container ul.nav-menu li.menu-item-34 a {
+  margin-right: 20%;
+}
+nav.main-navigation div.menu-comosantas-container ul.nav-menu li:nth-child(3),
+nav.main-navigation div.menu-comosantas-container ul.nav-menu li:nth-child(4) {
+  text-align: right;
+}
+nav.main-navigation div.menu-comosantas-container ul.nav-menu li:nth-child(3) a,
+nav.main-navigation div.menu-comosantas-container ul.nav-menu li:nth-child(4) a {
+  margin-right: 20%;
 }
 body {
   background: url("images/bg-top.jpg") no-repeat center center fixed;

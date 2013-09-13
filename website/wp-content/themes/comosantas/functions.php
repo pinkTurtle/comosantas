@@ -87,7 +87,7 @@ function santas_gallery($attr) {
     $imgfullatt = wp_get_attachment_image_src( $id, "full" );
     $src = $imgfullatt[0];
 
-    $output .= '<img class="wp-image-345" src="'.$src.'" title="'.$tit.'" alt="'.$tit.'" />';
+    $output .= '<img class="wp-image-345" src="'.$src.'" title="'.$tit.'" alt="'.$desc.'" />';
 //    $output .= '<div class="mg-content"><hr /><h3>'.$tit.'</h3>'.$desc.'</div>';
   }
   //$output .= '</ul>

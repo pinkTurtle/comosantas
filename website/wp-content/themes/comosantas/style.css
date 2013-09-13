@@ -1581,7 +1581,9 @@ body.pages div.pages.cuatrocerocuatro {
   background-repeat: repeat;
 }
 body.pages div.pages.cuatrocerocuatro p {
-  margin: 25% auto 0px;
+  margin: 0px auto;
+  position: relative;
+  top: 40%;
   width: 60%;
   font: 55px/65px waitingsunrise;
   color: #fff;

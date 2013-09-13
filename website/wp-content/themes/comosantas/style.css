@@ -1388,6 +1388,7 @@ body.pages div.pages div.logo.casual {
   background-position: -202px -2px;
 }
 body.pages div.pages div.logo.lookbook,
+body.pages div.pages div.logo.cuatrocerocuatro,
 body.pages div.pages div.logo.quienes-somos,
 body.pages div.pages div.logo.contacto {
   background-position: -1px -2px;
@@ -1463,9 +1464,8 @@ body.pages div.pages.contacto ul li.last {
   margin: 0px;
 }
 body.pages div.pages.contacto p {
-  font: 40px/22px waitingsunrise;
+  font: 40px/20px waitingsunrise;
   color: #fff;
-  line-height: 20px;
   text-align: center;
   text-shadow: 3px 3px 7px #000;
 }
@@ -1575,6 +1575,18 @@ body.pages div.pages.init ul.contact_menu li.ma {
 }
 body.pages div.pages.init ul.contact_menu li.te {
   background-position: -745px -114px;
+}
+body.pages div.pages.cuatrocerocuatro {
+  background-image: url("images/green_bg.jpg");
+  background-repeat: repeat;
+}
+body.pages div.pages.cuatrocerocuatro p {
+  margin: 25% auto 0px;
+  width: 60%;
+  font: 55px/65px waitingsunrise;
+  color: #fff;
+  text-align: center;
+  text-shadow: 3px 3px 7px #000;
 }
 body.pages div.pages.lookbook {
   background-image: url("images/green_bg.jpg");

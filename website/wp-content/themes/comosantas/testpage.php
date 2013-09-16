@@ -49,9 +49,6 @@ $slug = $post->post_name;
 ?>
 <body class="pages">
 <div class="pages <?php echo $slug; ?>">
-  <div class="logo <?php echo $slug; ?>">
-    <a href="<?php echo get_bloginfo('url'); ?>"></a>
-  </div>
 <?php
 if (13 == $post->post_parent) {
 ?>

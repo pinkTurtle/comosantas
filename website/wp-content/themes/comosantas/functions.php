@@ -104,4 +104,6 @@ function santas_gallery($attr) {
 remove_shortcode('gallery', 'gallery_shortcode');
 add_shortcode('gallery', 'santas_gallery');
 
+show_admin_bar(false);
+
 ?>

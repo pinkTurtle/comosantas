@@ -47,7 +47,8 @@ Text Domain: comosantas
 @import 'sources/styles/responsive/minitablet.styl'
 @import 'sources/styles/responsive/smartph.styl'
 
-
+html
+  margin: 0px !important
 div#wrap
   height: 100%
   position: relative
@@ -97,45 +98,59 @@ div#main.loading
 .ps-container .ps-scrollbar-y.hover
   opacity: 0.9
   cursor: default
-
 /* fin estilos para perfect scrollbar */
 
-body.pages
+header#masthead
+  margin: 0px
+
+body
+  #page
+    height: 100%
+    #main
+      height: 100%
+  div.logo
+    width: 98px
+    height: 160px
+    background-image: url('images/sprite.png')
+    position: absolute
+    top: 0px
+    left: 3%
+    a
+      width: 84%
+      height: 87%
+      display: block
+    &.manifesto
+      background-position: -99px -2px
+    &.home-and-pjs
+      background-position: -408px -2px
+    &.lenceria
+      background-position: -305px -2px
+    &.casual
+      background-position: -202px -2px
+    &.lookbook,
+    &.test,
+    &.cuatrocerocuatro,
+    &.quienes-somos,
+    &.contacto
+      background-position: -1px -2px
+    &.init
+      width: 120px
+      height: 200px
+      background-position: -514px -3px
+      left: 50%
+      margin-left: -60px
+
+body.pages,
+body.page
   *
     box-sizing: border-box
+  margin:0px !important
+  padding: 0px
+
   div.pages
     padding-top: 1px
     height: 100%
-    div.logo
-      width: 98px
-      height: 160px
-      background-image: url('images/sprite.png')
-      position: absolute
-      top: 0px
-      left: 40px
-      a
-        width: 84%
-        height: 87%
-        display: block
-      &.manifesto
-        background-position: -99px -2px
-      &.home-and-pjs
-        background-position: -408px -2px
-      &.lenceria
-        background-position: -305px -2px
-      &.casual
-        background-position: -202px -2px
-      &.lookbook,
-      &.cuatrocerocuatro,
-      &.quienes-somos,
-      &.contacto
-        background-position: -1px -2px
-      &.init
-        width: 120px
-        height: 200px
-        background-position: -514px -3px
-        left: 50%
-        margin-left: -60px
+
     div.splash
       background-image: url('images/somos_como_santas.png')
       height: 728px
@@ -342,6 +357,7 @@ body.pages
                   background-position: -584px -290px
     &.lenceria,
     &.casual,
+    &.test,
     &.home-and-pjs
       background-repeat: repeat
       div.lookbook_logo
@@ -360,48 +376,53 @@ body.pages
       background-image: url('images/heart_03_bg_tile.jpg')
     &.lenceria
       background-image: url('images/heart_02_bg_tile.jpg')
+    &.test
+      background-image: url('images/heart_01_bg_tile.jpg')
 
-nav.main-navigation
-  div.menu-comosantas-container
-    color: blue
-    ul.nav-menu
-      font: normal 16px cabin-bold
-      margin-top: 80px
-      background-color: $verde_init
-      height: 36px
-      line-height: 36px
-      li
-        a
-          color: white
-          text-transform: uppercase
-        width: 24.5%
-        display: inline-block
-        &.menu-item-33,
-        &.menu-item-16
-          text-align: left
+div#navbar.navbar
+  z-index: 15
+  width: 80px
+  height: 137px
+  position: absolute
+  top: 0px
+  left: 0px
+  transition: width 1s
+  div.logo
+    left: 0px
+    margin-left: 30px
+  nav.main-navigation
+    font: normal 16px cabin-bold
+    transition: width 0.7s, font-size 1.5s
+    width: 0%
+    font-size: 0px
+    background-color: $verde_init
+    margin-top: 20px
+    div.menu-comosantas-container
+      ul.nav-menu
+        overflow: hidden
+        margin-left: 114px
+        background-color: $verde_init
+        height: 36px
+        line-height: 36px
+        li
+          text-align: center
+          height: 16px
+          line-height: 16px
+          margin: 10px auto
+          overflow: hidden
           a
-            margin-left: 20%
-        &:nth-child(1),
-        &:nth-child(2)
-          text-align: left
-          a
-            margin-left: 20%
-        &.menu-item-28,
-        &.menu-item-34
-          text-align: right
-          a
-            margin-right: 20%
-        &:nth-child(3),
-        &:nth-child(4)
-          text-align: right
-          a
-            margin-right: 20%
-body
-  background: url('images/bg-top.jpg') no-repeat center center fixed
-  -webkit-background-size: cover
-  -moz-background-size: cover
-  -o-background-size: cover
-  background-size: cover
-  filter:unquote('progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/bg-top.jpg", sizingMethod="scale")')
-  -ms-filter: unquote('progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/bg-top.jpg", sizingMethod="scale"')
+            color: white
+            text-transform: uppercase
+          width: 24.5%
+          display: inline-block
+    &.test
+      background-color: $rosa_lookbook
+      div.menu-comosantas-container
+        ul.nav-menu
+          background-color: $rosa_lookbook
+  &:hover
+    width: 100%
+    nav.main-navigation
+      width: 100%
+      font-size: 16px
 

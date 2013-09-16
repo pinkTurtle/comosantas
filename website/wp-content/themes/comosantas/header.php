@@ -25,18 +25,35 @@
 	<title><?php wp_title( '|', true, 'right' ); ?></title>
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+  <script src="<?php echo get_bloginfo('url'); ?>/wp-content/themes/comosantas/js/galleria-1.2.9.js"></script>
+  <script src="<?php echo get_bloginfo('url'); ?>/wp-content/themes/comosantas/js/perfect-scrollbar.js"></script>
+  <script src="<?php echo get_bloginfo('url'); ?>/wp-content/themes/comosantas/js/jquery.mousewheel.js"></script>
 	<!--[if lt IE 9]>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
 	<![endif]-->
 	<?php wp_head(); ?>
 </head>
 
+<?php
+
+global $wp_query;
+$post_id = $wp_query->post->ID;
+$post = get_post( $post_id );
+$slug = $post->post_name;
+
+?>
+
 <body <?php body_class(); ?>>
+  <?php include_once 'functions.php'; ?>
 	<div id="page" class="hfeed site">
 		<header id="masthead" class="site-header" role="banner">
 
 			<div id="navbar" class="navbar">
-				<nav id="site-navigation" class="navigation main-navigation" role="navigation">
+        <div class="logo <?php echo $slug; ?>">
+          <a href="<?php echo get_bloginfo('url'); ?>"></a>
+        </div>
+				<nav id="site-navigation" class="navigation main-navigation <?php echo $slug; ?>" role="navigation">
           <?php wp_nav_menu( array( 'theme_location' => 'primario', 'menu_class' => 'nav-menu' ) ); ?>
 
 					<?php //get_search_form(); ?>

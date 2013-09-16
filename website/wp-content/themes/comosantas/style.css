@@ -1717,20 +1717,32 @@ div#navbar.navbar nav.main-navigation.contacto div.menu-comosantas-container ul.
 div#navbar.navbar nav.main-navigation.test div.menu-comosantas-container ul.nav-menu {
   background-color: #eb6969;
 }
-div#navbar.navbar nav.main-navigation.lenceria,
-div#navbar.navbar nav.main-navigation.home-and-pjs,
 div#navbar.navbar nav.main-navigation.casual {
   background-color: #fff;
 }
-div#navbar.navbar nav.main-navigation.lenceria div.menu-comosantas-container ul.nav-menu,
-div#navbar.navbar nav.main-navigation.home-and-pjs div.menu-comosantas-container ul.nav-menu,
 div#navbar.navbar nav.main-navigation.casual div.menu-comosantas-container ul.nav-menu {
   background-color: #fff;
 }
-div#navbar.navbar nav.main-navigation.lenceria div.menu-comosantas-container ul.nav-menu li a,
-div#navbar.navbar nav.main-navigation.home-and-pjs div.menu-comosantas-container ul.nav-menu li a,
 div#navbar.navbar nav.main-navigation.casual div.menu-comosantas-container ul.nav-menu li a {
-  color: #3f3b3c;
+  color: #d04746;
+}
+div#navbar.navbar nav.main-navigation.home-and-pjs {
+  background-color: #fff;
+}
+div#navbar.navbar nav.main-navigation.home-and-pjs div.menu-comosantas-container ul.nav-menu {
+  background-color: #fff;
+}
+div#navbar.navbar nav.main-navigation.home-and-pjs div.menu-comosantas-container ul.nav-menu li a {
+  color: #f8baa7;
+}
+div#navbar.navbar nav.main-navigation.lenceria {
+  background-color: #fff;
+}
+div#navbar.navbar nav.main-navigation.lenceria div.menu-comosantas-container ul.nav-menu {
+  background-color: #fff;
+}
+div#navbar.navbar nav.main-navigation.lenceria div.menu-comosantas-container ul.nav-menu li a {
+  color: #0eb293;
 }
 div#navbar.navbar nav.main-navigation.manifesto {
   background-color: #ffda9c;

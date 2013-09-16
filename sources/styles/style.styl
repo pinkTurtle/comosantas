@@ -396,7 +396,7 @@ div#navbar.navbar
     width: 0%
     font-size: 0px
     background-color: $verde_init
-    margin-top: 20px
+    margin-top: 40px
     div.menu-comosantas-container
       ul.nav-menu
         overflow: hidden
@@ -415,11 +415,33 @@ div#navbar.navbar
             text-transform: uppercase
           width: 24.5%
           display: inline-block
+    &.lookbook,
+    &.cuatrocerocuatro,
+    &.quienes-somos,
+    &.contacto
     &.test
       background-color: $rosa_lookbook
       div.menu-comosantas-container
         ul.nav-menu
           background-color: $rosa_lookbook
+    &.lenceria,
+    &.home-and-pjs,
+    &.casual
+      background-color: white
+      div.menu-comosantas-container
+        ul.nav-menu
+          background-color: white
+          li
+            a
+              color: $lookbook_color
+    &.manifesto
+      background-color: $amarillo_manifesto
+      div.menu-comosantas-container
+        ul.nav-menu
+          background-color: $amarillo_manifesto
+          li
+            a
+              color: $lookbook_color
   &:hover
     width: 100%
     nav.main-navigation

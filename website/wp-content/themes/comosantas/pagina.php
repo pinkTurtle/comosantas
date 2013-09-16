@@ -1,16 +1,10 @@
 <!DOCTYPE html>
 <?php
 /*
-Template Name: Pagina Como Santas
+Template Name: Pagina Como Santas V:0.2
 */
+get_header();
 ?>
-
-<head>
-  <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" type="text/css" />
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
-  <script src="<?php echo get_bloginfo('url'); ?>/wp-content/themes/comosantas/js/galleria-1.2.9.js"></script>
-  <script src="<?php echo get_bloginfo('url'); ?>/wp-content/themes/comosantas/js/perfect-scrollbar.js"></script>
-  <script src="<?php echo get_bloginfo('url'); ?>/wp-content/themes/comosantas/js/jquery.mousewheel.js"></script>
 <style>
     #galleria { 
       width: 595px;
@@ -45,7 +39,6 @@ $(".quienessomos").perfectScrollbar({
 });
 </script>
 
-</head>
 <?php
 
 global $wp_query;
@@ -56,9 +49,6 @@ $slug = $post->post_name;
 ?>
 <body class="pages">
 <div class="pages <?php echo $slug; ?>">
-  <div class="logo <?php echo $slug; ?>">
-    <a href="<?php echo get_bloginfo('url'); ?>"></a>
-  </div>
 <?php
 if (13 == $post->post_parent) {
 ?>

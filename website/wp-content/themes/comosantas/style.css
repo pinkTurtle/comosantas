@@ -1813,7 +1813,7 @@ div#navbar.navbar nav.main-navigation {
   width: 0%;
   font-size: 0px;
   background-color: #80cbb6;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 div#navbar.navbar nav.main-navigation div.menu-comosantas-container ul.nav-menu {
   overflow: hidden;
@@ -1835,11 +1835,43 @@ div#navbar.navbar nav.main-navigation div.menu-comosantas-container ul.nav-menu 
   color: #fff;
   text-transform: uppercase;
 }
+div#navbar.navbar nav.main-navigation.lookbook,
+div#navbar.navbar nav.main-navigation.cuatrocerocuatro,
+div#navbar.navbar nav.main-navigation.quienes-somos,
+div#navbar.navbar nav.main-navigation.contacto,
 div#navbar.navbar nav.main-navigation.test {
   background-color: #eb6969;
 }
+div#navbar.navbar nav.main-navigation.lookbook div.menu-comosantas-container ul.nav-menu,
+div#navbar.navbar nav.main-navigation.cuatrocerocuatro div.menu-comosantas-container ul.nav-menu,
+div#navbar.navbar nav.main-navigation.quienes-somos div.menu-comosantas-container ul.nav-menu,
+div#navbar.navbar nav.main-navigation.contacto div.menu-comosantas-container ul.nav-menu,
 div#navbar.navbar nav.main-navigation.test div.menu-comosantas-container ul.nav-menu {
   background-color: #eb6969;
+}
+div#navbar.navbar nav.main-navigation.lenceria,
+div#navbar.navbar nav.main-navigation.home-and-pjs,
+div#navbar.navbar nav.main-navigation.casual {
+  background-color: #fff;
+}
+div#navbar.navbar nav.main-navigation.lenceria div.menu-comosantas-container ul.nav-menu,
+div#navbar.navbar nav.main-navigation.home-and-pjs div.menu-comosantas-container ul.nav-menu,
+div#navbar.navbar nav.main-navigation.casual div.menu-comosantas-container ul.nav-menu {
+  background-color: #fff;
+}
+div#navbar.navbar nav.main-navigation.lenceria div.menu-comosantas-container ul.nav-menu li a,
+div#navbar.navbar nav.main-navigation.home-and-pjs div.menu-comosantas-container ul.nav-menu li a,
+div#navbar.navbar nav.main-navigation.casual div.menu-comosantas-container ul.nav-menu li a {
+  color: #3f3b3c;
+}
+div#navbar.navbar nav.main-navigation.manifesto {
+  background-color: #ffda9c;
+}
+div#navbar.navbar nav.main-navigation.manifesto div.menu-comosantas-container ul.nav-menu {
+  background-color: #ffda9c;
+}
+div#navbar.navbar nav.main-navigation.manifesto div.menu-comosantas-container ul.nav-menu li a {
+  color: #3f3b3c;
 }
 div#navbar.navbar:hover {
   width: 100%;

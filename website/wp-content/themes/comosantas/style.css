@@ -644,157 +644,6 @@ input[type="submit"].small {
   clear: both;
   width: 100%;
 }
-a.big-button,
-a.small-button {
-  display: block;
-  color: #fff;
-  background-color: $grey-medium;
-  text-transform: uppercase;
-  text-decoration: none;
-  position: relative;
-  padding-right: 60px;
-  -webkit-transition: background-color 200ms ease-in;
-  -moz-transition: background-color 200ms ease-in;
-  -o-transition: background-color 200ms ease-in;
-  -ms-transition: background-color 200ms ease-in;
-  transition: background-color 200ms ease-in;
-}
-a.big-button:hover,
-a.small-button:hover {
-  background-color: $orange-dark;
-  color: $orange-light;
-}
-a.big-button:after,
-a.small-button:after {
-  display: block;
-  width: 24px;
-  height: 26px;
-  background-image: url("images/sprite.png");
-  background-repeat: no-repeat;
-  background-position: -100px -108px;
-  position: absolute;
-  right: 12px;
-  top: 50%;
-  margin-top: -12px;
-  content: " ";
-  z-index: 100;
-}
-a.big-button {
-  padding: 0px 70px 0px 20px;
-  height: 90px;
-  display: inline-block;
-  line-height: 90px;
-  font-size: 16px;
-  font-weight: bold;
-}
-a.big-button:before {
-  display: block;
-  content: " ";
-  width: 50px;
-  height: 90px;
-  position: absolute;
-  background-image: url("images/dash-bg-dark.png");
-  background-repeat: repeat;
-  top: 0px;
-  right: 0px;
-  z-index: 10;
-}
-a.small-button {
-  color: $orange-light;
-  padding: 0px 45px 0px 20px;
-  height: 40px;
-  display: inline-block;
-  line-height: 38px;
-  font-size: 12px;
-  text-transform: none;
-}
-a.small-button:after {
-  width: 12px;
-  height: 12px;
-  background-position: -14px -119px;
-  position: relative;
-  display: inline-block;
-  top: 2px;
-  right: -10px;
-}
-a.menu-button {
-  height: 50px;
-}
-a.menu-button img {
-  top: 2px;
-  position: relative;
-}
-a.menu-button span {
-  text-transform: none;
-  display: block;
-  height: 50px;
-  line-height: 48px;
-  font-size: 14px;
-  line-height: 50px;
-  background-color: $grey-medium;
-  color: $orange-light;
-  padding-left: 20px;
-  -webkit-transition: background-color 200ms ease-in;
-  -moz-transition: background-color 200ms ease-in;
-  -o-transition: background-color 200ms ease-in;
-  -ms-transition: background-color 200ms ease-in;
-  transition: background-color 200ms ease-in;
-  position: relative;
-}
-a.menu-button span:before,
-a.menu-button span:after {
-  content: " ";
-  width: 10px;
-  position: absolute;
-  display: block;
-  height: 10px;
-  top: -10px;
-  left: 20px;
-  background-position: -190px -20px;
-  background-image: url("images/sprite.png");
-}
-a.menu-button span:after {
-  top: -10px;
-  -webkit-transition: opacity 200ms ease-in;
-  -moz-transition: opacity 200ms ease-in;
-  -o-transition: opacity 200ms ease-in;
-  -ms-transition: opacity 200ms ease-in;
-  transition: opacity 200ms ease-in;
-  background-position: -200px -20px;
-  opacity: 0;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  filter: alpha(opacity=0);
-}
-a.menu-button:hover span {
-  background-color: $orange-dark;
-}
-a.menu-button:hover span:after {
-  opacity: 1;
-  -ms-filter: none;
-  filter: none;
-}
-input[type="submit"].button-light,
-a.link-button-light {
-  font: normal 27px $main-font;
-  text-transform: uppercase;
-  background-color: rgba(255,255,255,0.5);
-  color: $gray;
-  margin: 10px auto 0;
-  height: 70px;
-  line-height: 70px;
-  width: 280px;
-  text-align: center;
-  display: block;
-  border: none;
-  text-decoration: none;
-  -webkit-box-shadow: -6px 6px 0 rgba(0,0,0,0.25);
-  box-shadow: -6px 6px 0 rgba(0,0,0,0.25);
-  -webkit-appearance: none;
-}
-input[type="submit"].button-light:hover,
-a.link-button-light:hover {
-  background-color: rgba(255,255,255,0.3);
-}
 /* Component */
 /*@import 'sources/javascript/main/build/build.styl'
 
@@ -829,9 +678,6 @@ div#footer .wrap {
 }
 /* Responsive Mobile */
 @media only screen and (max-width : 1024px) {
-  body {
-    background: url("images/bg-repeat.jpg") !important;
-  }
   #main-container {
     width: 100%;
   }
@@ -1034,46 +880,6 @@ div#footer .wrap {
   ul#filters_rank li.filterrank_item.webelos:hover,
   ul#filters_rank li.filterrank_item.webelos.current {
     background-position: -333px -117px;
-  }
-  ul#view_by {
-    margin: 6px 0px;
-    float: right;
-    width: 140px;
-  }
-  ul#view_by li.view_by {
-    margin: 5px 2px;
-    width: 41px;
-    height: 41px;
-    border: 3px solid #fd3;
-    -webkit-border-radius: 30px;
-    border-radius: 30px;
-    -webkit-box-shadow: 0px 1px 1px #000;
-    box-shadow: 0px 1px 1px #000;
-    float: left;
-    background-image: url("images/bg-brown.jpg");
-  }
-  ul#view_by li.view_by.current,
-  ul#view_by li.view_by:hover {
-    background-color: rgba(0,0,0,0.3);
-    background-image: none;
-    border-color: #3b5570;
-  }
-  ul#view_by li.view_by a {
-    text-indent: -9999px;
-    display: block;
-    width: 100%;
-    height: 100%;
-  }
-  ul#view_by li.view_by.grid a {
-    background-image: url("images/sprite.png");
-    background-position: -589px -165px;
-  }
-  ul#view_by li.view_by.list a {
-    background-image: url("images/sprite.png");
-    background-position: -630px -165px;
-  }
-  div.sidebar_header {
-    left: 20px;
   }
 }
 @media only screen and (max-width : 800px) {
@@ -1286,22 +1092,6 @@ div#footer .wrap {
 html {
   margin: 0px !important;
 }
-div#wrap {
-  height: 100%;
-  position: relative;
-}
-div#main.loading {
-  min-height: 200px;
-  background: url("images/bg-white.jpg") repeat-y right;
-}
-div#main.loading:after {
-  content: '';
-  background: url("images/ajax-loader.gif") no-repeat center center;
-  width: 55px;
-  height: 55px;
-  margin: 60px auto 0;
-  display: block;
-}
 /* estilos para perfect scrollbar */
 /* fueron eliminados los estilos del 
     scrollbar X, para que no sea visible */
@@ -1372,6 +1162,7 @@ body div.logo {
   position: absolute;
   top: 0px;
   left: 3%;
+  background-position: -1px -2px;
 }
 body div.logo a {
   width: 84%;
@@ -1405,22 +1196,26 @@ body div.logo.init {
   margin-left: -60px;
 }
 body.pages,
+body.error404,
 body.page {
   margin: 0px !important;
   padding: 0px;
 }
 body.pages *,
+body.error404 *,
 body.page * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 body.pages div.pages,
+body.error404 div.pages,
 body.page div.pages {
   padding-top: 1px;
   height: 100%;
 }
 body.pages div.pages div.splash,
+body.error404 div.pages div.splash,
 body.page div.pages div.splash {
   background-image: url("images/somos_como_santas.png");
   height: 728px;
@@ -1432,11 +1227,13 @@ body.page div.pages div.splash {
   margin-left: -341px;
 }
 body.pages div.pages.manifesto,
+body.error404 div.pages.manifesto,
 body.page div.pages.manifesto {
   background-image: url("images/moles_01_bg_tile.jpg");
   background-repeat: repeat;
 }
 body.pages div.pages.quienes-somos,
+body.error404 div.pages.quienes-somos,
 body.page div.pages.quienes-somos {
   background-image: url("images/olympus_bg_mid.jpg");
   background-repeat: no-repeat;
@@ -1446,6 +1243,7 @@ body.page div.pages.quienes-somos {
   background-position: center bottom;
 }
 body.pages div.pages.quienes-somos div.quienessomos,
+body.error404 div.pages.quienes-somos div.quienessomos,
 body.page div.pages.quienes-somos div.quienessomos {
   width: 500px;
   height: 440px;
@@ -1459,6 +1257,7 @@ body.page div.pages.quienes-somos div.quienessomos {
   overflow: hidden;
 }
 body.pages div.pages.quienes-somos div.quienessomos p,
+body.error404 div.pages.quienes-somos div.quienessomos p,
 body.page div.pages.quienes-somos div.quienessomos p {
   text-align: justify;
   font: 19px/25px arial;
@@ -1466,6 +1265,7 @@ body.page div.pages.quienes-somos div.quienessomos p {
   margin: 0px;
 }
 body.pages div.pages.contacto,
+body.error404 div.pages.contacto,
 body.page div.pages.contacto {
   background-image: url("images/maquina_mid.jpg");
   background-repeat: no-repeat;
@@ -1475,11 +1275,13 @@ body.page div.pages.contacto {
   background-position: center center;
 }
 body.pages div.pages.contacto ul,
+body.error404 div.pages.contacto ul,
 body.page div.pages.contacto ul {
   margin: 200px auto 40px;
   width: 186px;
 }
 body.pages div.pages.contacto ul li,
+body.error404 div.pages.contacto ul li,
 body.page div.pages.contacto ul li {
   width: 25px;
   height: 25px;
@@ -1489,10 +1291,12 @@ body.page div.pages.contacto ul li {
   margin-right: 50px;
 }
 body.pages div.pages.contacto ul li.last,
+body.error404 div.pages.contacto ul li.last,
 body.page div.pages.contacto ul li.last {
   margin: 0px;
 }
 body.pages div.pages.contacto p,
+body.error404 div.pages.contacto p,
 body.page div.pages.contacto p {
   font: 40px/20px waitingsunrise;
   color: #fff;
@@ -1500,14 +1304,17 @@ body.page div.pages.contacto p {
   text-shadow: 3px 3px 7px #000;
 }
 body.pages div.pages.init,
+body.error404 div.pages.init,
 body.page div.pages.init {
   background-image: none;
 }
 body.pages div.pages.init div.menu-comosantas-container,
+body.error404 div.pages.init div.menu-comosantas-container,
 body.page div.pages.init div.menu-comosantas-container {
   color: #00f;
 }
 body.pages div.pages.init div.menu-comosantas-container ul.nav-menu,
+body.error404 div.pages.init div.menu-comosantas-container ul.nav-menu,
 body.page div.pages.init div.menu-comosantas-container ul.nav-menu {
   font: normal 16px cabin-bold;
   margin-top: 80px;
@@ -1516,64 +1323,83 @@ body.page div.pages.init div.menu-comosantas-container ul.nav-menu {
   line-height: 36px;
 }
 body.pages div.pages.init div.menu-comosantas-container ul.nav-menu li,
+body.error404 div.pages.init div.menu-comosantas-container ul.nav-menu li,
 body.page div.pages.init div.menu-comosantas-container ul.nav-menu li {
   width: 24.5%;
   display: inline-block;
 }
 body.pages div.pages.init div.menu-comosantas-container ul.nav-menu li a,
+body.error404 div.pages.init div.menu-comosantas-container ul.nav-menu li a,
 body.page div.pages.init div.menu-comosantas-container ul.nav-menu li a {
   color: #fff;
   text-transform: uppercase;
 }
 body.pages div.pages.init div.menu-comosantas-container ul.nav-menu li.menu-item-33,
+body.error404 div.pages.init div.menu-comosantas-container ul.nav-menu li.menu-item-33,
 body.page div.pages.init div.menu-comosantas-container ul.nav-menu li.menu-item-33,
 body.pages div.pages.init div.menu-comosantas-container ul.nav-menu li.menu-item-16,
+body.error404 div.pages.init div.menu-comosantas-container ul.nav-menu li.menu-item-16,
 body.page div.pages.init div.menu-comosantas-container ul.nav-menu li.menu-item-16 {
   text-align: left;
 }
 body.pages div.pages.init div.menu-comosantas-container ul.nav-menu li.menu-item-33 a,
+body.error404 div.pages.init div.menu-comosantas-container ul.nav-menu li.menu-item-33 a,
 body.page div.pages.init div.menu-comosantas-container ul.nav-menu li.menu-item-33 a,
 body.pages div.pages.init div.menu-comosantas-container ul.nav-menu li.menu-item-16 a,
+body.error404 div.pages.init div.menu-comosantas-container ul.nav-menu li.menu-item-16 a,
 body.page div.pages.init div.menu-comosantas-container ul.nav-menu li.menu-item-16 a {
   margin-left: 20%;
 }
 body.pages div.pages.init div.menu-comosantas-container ul.nav-menu li:nth-child(1),
+body.error404 div.pages.init div.menu-comosantas-container ul.nav-menu li:nth-child(1),
 body.page div.pages.init div.menu-comosantas-container ul.nav-menu li:nth-child(1),
 body.pages div.pages.init div.menu-comosantas-container ul.nav-menu li:nth-child(2),
+body.error404 div.pages.init div.menu-comosantas-container ul.nav-menu li:nth-child(2),
 body.page div.pages.init div.menu-comosantas-container ul.nav-menu li:nth-child(2) {
   text-align: left;
 }
 body.pages div.pages.init div.menu-comosantas-container ul.nav-menu li:nth-child(1) a,
+body.error404 div.pages.init div.menu-comosantas-container ul.nav-menu li:nth-child(1) a,
 body.page div.pages.init div.menu-comosantas-container ul.nav-menu li:nth-child(1) a,
 body.pages div.pages.init div.menu-comosantas-container ul.nav-menu li:nth-child(2) a,
+body.error404 div.pages.init div.menu-comosantas-container ul.nav-menu li:nth-child(2) a,
 body.page div.pages.init div.menu-comosantas-container ul.nav-menu li:nth-child(2) a {
   margin-left: 20%;
 }
 body.pages div.pages.init div.menu-comosantas-container ul.nav-menu li.menu-item-28,
+body.error404 div.pages.init div.menu-comosantas-container ul.nav-menu li.menu-item-28,
 body.page div.pages.init div.menu-comosantas-container ul.nav-menu li.menu-item-28,
 body.pages div.pages.init div.menu-comosantas-container ul.nav-menu li.menu-item-34,
+body.error404 div.pages.init div.menu-comosantas-container ul.nav-menu li.menu-item-34,
 body.page div.pages.init div.menu-comosantas-container ul.nav-menu li.menu-item-34 {
   text-align: right;
 }
 body.pages div.pages.init div.menu-comosantas-container ul.nav-menu li.menu-item-28 a,
+body.error404 div.pages.init div.menu-comosantas-container ul.nav-menu li.menu-item-28 a,
 body.page div.pages.init div.menu-comosantas-container ul.nav-menu li.menu-item-28 a,
 body.pages div.pages.init div.menu-comosantas-container ul.nav-menu li.menu-item-34 a,
+body.error404 div.pages.init div.menu-comosantas-container ul.nav-menu li.menu-item-34 a,
 body.page div.pages.init div.menu-comosantas-container ul.nav-menu li.menu-item-34 a {
   margin-right: 20%;
 }
 body.pages div.pages.init div.menu-comosantas-container ul.nav-menu li:nth-child(3),
+body.error404 div.pages.init div.menu-comosantas-container ul.nav-menu li:nth-child(3),
 body.page div.pages.init div.menu-comosantas-container ul.nav-menu li:nth-child(3),
 body.pages div.pages.init div.menu-comosantas-container ul.nav-menu li:nth-child(4),
+body.error404 div.pages.init div.menu-comosantas-container ul.nav-menu li:nth-child(4),
 body.page div.pages.init div.menu-comosantas-container ul.nav-menu li:nth-child(4) {
   text-align: right;
 }
 body.pages div.pages.init div.menu-comosantas-container ul.nav-menu li:nth-child(3) a,
+body.error404 div.pages.init div.menu-comosantas-container ul.nav-menu li:nth-child(3) a,
 body.page div.pages.init div.menu-comosantas-container ul.nav-menu li:nth-child(3) a,
 body.pages div.pages.init div.menu-comosantas-container ul.nav-menu li:nth-child(4) a,
+body.error404 div.pages.init div.menu-comosantas-container ul.nav-menu li:nth-child(4) a,
 body.page div.pages.init div.menu-comosantas-container ul.nav-menu li:nth-child(4) a {
   margin-right: 20%;
 }
 body.pages div.pages.init div.site_logo,
+body.error404 div.pages.init div.site_logo,
 body.page div.pages.init div.site_logo {
   width: 276px;
   height: 135px;
@@ -1585,6 +1411,7 @@ body.page div.pages.init div.site_logo {
   z-index: 10;
 }
 body.pages div.pages.init div.guarda,
+body.error404 div.pages.init div.guarda,
 body.page div.pages.init div.guarda {
   height: 15px;
   width: 100%;
@@ -1593,21 +1420,25 @@ body.page div.pages.init div.guarda {
   z-index: 10;
 }
 body.pages div.pages.init div.guarda.superior,
+body.error404 div.pages.init div.guarda.superior,
 body.page div.pages.init div.guarda.superior {
   background-image: url("images/guarda-sup.png");
   top: 217px;
 }
 body.pages div.pages.init div.guarda.inferior,
+body.error404 div.pages.init div.guarda.inferior,
 body.page div.pages.init div.guarda.inferior {
   background-image: url("images/guarda-inf.png");
   top: 492px;
 }
 body.pages div.pages.init ul.contact_menu,
+body.error404 div.pages.init ul.contact_menu,
 body.page div.pages.init ul.contact_menu {
   width: 260px;
   margin-left: 40px;
 }
 body.pages div.pages.init ul.contact_menu li,
+body.error404 div.pages.init ul.contact_menu li,
 body.page div.pages.init ul.contact_menu li {
   float: left;
   width: 55px;
@@ -1617,33 +1448,40 @@ body.page div.pages.init ul.contact_menu li {
   text-indent: -99999px;
 }
 body.pages div.pages.init ul.contact_menu li a,
+body.error404 div.pages.init ul.contact_menu li a,
 body.page div.pages.init ul.contact_menu li a {
   display: block;
   width: 71%;
   height: 74%;
 }
 body.pages div.pages.init ul.contact_menu li:last-child,
+body.error404 div.pages.init ul.contact_menu li:last-child,
 body.page div.pages.init ul.contact_menu li:last-child {
   margin-right: 0px;
 }
 body.pages div.pages.init ul.contact_menu li.fb,
+body.error404 div.pages.init ul.contact_menu li.fb,
 body.page div.pages.init ul.contact_menu li.fb {
   background-position: -745px -2px;
 }
 body.pages div.pages.init ul.contact_menu li.ma,
+body.error404 div.pages.init ul.contact_menu li.ma,
 body.page div.pages.init ul.contact_menu li.ma {
   background-position: -745px -58px;
 }
 body.pages div.pages.init ul.contact_menu li.te,
+body.error404 div.pages.init ul.contact_menu li.te,
 body.page div.pages.init ul.contact_menu li.te {
   background-position: -745px -114px;
 }
 body.pages div.pages.cuatrocerocuatro,
+body.error404 div.pages.cuatrocerocuatro,
 body.page div.pages.cuatrocerocuatro {
   background-image: url("images/green_bg.jpg");
   background-repeat: repeat;
 }
 body.pages div.pages.cuatrocerocuatro p,
+body.error404 div.pages.cuatrocerocuatro p,
 body.page div.pages.cuatrocerocuatro p {
   margin: 0px auto;
   position: relative;
@@ -1655,11 +1493,13 @@ body.page div.pages.cuatrocerocuatro p {
   text-shadow: 3px 3px 7px #000;
 }
 body.pages div.pages.lookbook,
+body.error404 div.pages.lookbook,
 body.page div.pages.lookbook {
   background-image: url("images/green_bg.jpg");
   background-repeat: repeat;
 }
 body.pages div.pages.lookbook div.menu,
+body.error404 div.pages.lookbook div.menu,
 body.page div.pages.lookbook div.menu {
   width: 100%;
   height: 230px;
@@ -1669,11 +1509,13 @@ body.page div.pages.lookbook div.menu {
   margin-top: -115px;
 }
 body.pages div.pages.lookbook div.menu ul,
+body.error404 div.pages.lookbook div.menu ul,
 body.page div.pages.lookbook div.menu ul {
   height: 230px;
   width: 100%;
 }
 body.pages div.pages.lookbook div.menu ul li,
+body.error404 div.pages.lookbook div.menu ul li,
 body.page div.pages.lookbook div.menu ul li {
   width: 33.33%;
   height: 230px;
@@ -1681,6 +1523,7 @@ body.page div.pages.lookbook div.menu ul li {
   float: left;
 }
 body.pages div.pages.lookbook div.menu ul li a,
+body.error404 div.pages.lookbook div.menu ul li a,
 body.page div.pages.lookbook div.menu ul li a {
   background-image: url("images/sprite2.png");
   height: 160px;
@@ -1691,6 +1534,7 @@ body.page div.pages.lookbook div.menu ul li a {
   margin: 0px auto;
 }
 body.pages div.pages.lookbook div.menu ul li a span,
+body.error404 div.pages.lookbook div.menu ul li a span,
 body.page div.pages.lookbook div.menu ul li a span {
   position: relative;
   display: block;
@@ -1699,11 +1543,13 @@ body.page div.pages.lookbook div.menu ul li a span {
   width: 220px;
 }
 body.pages div.pages.lookbook div.menu ul li a span.option,
+body.error404 div.pages.lookbook div.menu ul li a span.option,
 body.page div.pages.lookbook div.menu ul li a span.option {
   margin-top: 140px;
   background-position: -90px -157px;
 }
 body.pages div.pages.lookbook div.menu ul li a span.name,
+body.error404 div.pages.lookbook div.menu ul li a span.name,
 body.page div.pages.lookbook div.menu ul li a span.name {
   top: 28px;
   left: 30px;
@@ -1711,46 +1557,60 @@ body.page div.pages.lookbook div.menu ul li a span.name {
   height: 40px;
 }
 body.pages div.pages.lookbook div.menu ul li.home a,
+body.error404 div.pages.lookbook div.menu ul li.home a,
 body.page div.pages.lookbook div.menu ul li.home a {
   background-position: 0px 0px;
 }
 body.pages div.pages.lookbook div.menu ul li.home a span.name,
+body.error404 div.pages.lookbook div.menu ul li.home a span.name,
 body.page div.pages.lookbook div.menu ul li.home a span.name {
   background-position: -629px -360px;
 }
 body.pages div.pages.lookbook div.menu ul li.lenc a,
+body.error404 div.pages.lookbook div.menu ul li.lenc a,
 body.page div.pages.lookbook div.menu ul li.lenc a {
   background-position: -238px -3px;
 }
 body.pages div.pages.lookbook div.menu ul li.lenc a span.name,
+body.error404 div.pages.lookbook div.menu ul li.lenc a span.name,
 body.page div.pages.lookbook div.menu ul li.lenc a span.name {
   background-position: -592px -326px;
 }
 body.pages div.pages.lookbook div.menu ul li.cass a,
+body.error404 div.pages.lookbook div.menu ul li.cass a,
 body.page div.pages.lookbook div.menu ul li.cass a {
   background-position: -477px -6px;
 }
 body.pages div.pages.lookbook div.menu ul li.cass a span.name,
+body.error404 div.pages.lookbook div.menu ul li.cass a span.name,
 body.page div.pages.lookbook div.menu ul li.cass a span.name {
   background-position: -584px -290px;
 }
 body.pages div.pages.lenceria,
+body.error404 div.pages.lenceria,
 body.page div.pages.lenceria,
 body.pages div.pages.casual,
+body.error404 div.pages.casual,
 body.page div.pages.casual,
 body.pages div.pages.test,
+body.error404 div.pages.test,
 body.page div.pages.test,
 body.pages div.pages.home-and-pjs,
+body.error404 div.pages.home-and-pjs,
 body.page div.pages.home-and-pjs {
   background-repeat: repeat;
 }
 body.pages div.pages.lenceria div.lookbook_logo,
+body.error404 div.pages.lenceria div.lookbook_logo,
 body.page div.pages.lenceria div.lookbook_logo,
 body.pages div.pages.casual div.lookbook_logo,
+body.error404 div.pages.casual div.lookbook_logo,
 body.page div.pages.casual div.lookbook_logo,
 body.pages div.pages.test div.lookbook_logo,
+body.error404 div.pages.test div.lookbook_logo,
 body.page div.pages.test div.lookbook_logo,
 body.pages div.pages.home-and-pjs div.lookbook_logo,
+body.error404 div.pages.home-and-pjs div.lookbook_logo,
 body.page div.pages.home-and-pjs div.lookbook_logo {
   height: 77px;
   width: 410px;
@@ -1759,30 +1619,38 @@ body.page div.pages.home-and-pjs div.lookbook_logo {
   background-position: -377px -208px;
 }
 body.pages div.pages.lenceria div.lookbook_logo a,
+body.error404 div.pages.lenceria div.lookbook_logo a,
 body.page div.pages.lenceria div.lookbook_logo a,
 body.pages div.pages.casual div.lookbook_logo a,
+body.error404 div.pages.casual div.lookbook_logo a,
 body.page div.pages.casual div.lookbook_logo a,
 body.pages div.pages.test div.lookbook_logo a,
+body.error404 div.pages.test div.lookbook_logo a,
 body.page div.pages.test div.lookbook_logo a,
 body.pages div.pages.home-and-pjs div.lookbook_logo a,
+body.error404 div.pages.home-and-pjs div.lookbook_logo a,
 body.page div.pages.home-and-pjs div.lookbook_logo a {
   display: block;
   height: 100%;
   width: 100%;
 }
 body.pages div.pages.home-and-pjs,
+body.error404 div.pages.home-and-pjs,
 body.page div.pages.home-and-pjs {
   background-image: url("images/heart_01_bg_tile.jpg");
 }
 body.pages div.pages.casual,
+body.error404 div.pages.casual,
 body.page div.pages.casual {
   background-image: url("images/heart_03_bg_tile.jpg");
 }
 body.pages div.pages.lenceria,
+body.error404 div.pages.lenceria,
 body.page div.pages.lenceria {
   background-image: url("images/heart_02_bg_tile.jpg");
 }
 body.pages div.pages.test,
+body.error404 div.pages.test,
 body.page div.pages.test {
   background-image: url("images/heart_01_bg_tile.jpg");
 }
@@ -1812,13 +1680,13 @@ div#navbar.navbar nav.main-navigation {
   transition: width 0.7s, font-size 1.5s;
   width: 0%;
   font-size: 0px;
-  background-color: #80cbb6;
+  background-color: #eb6969;
   margin-top: 40px;
 }
 div#navbar.navbar nav.main-navigation div.menu-comosantas-container ul.nav-menu {
   overflow: hidden;
   margin-left: 114px;
-  background-color: #80cbb6;
+  background-color: #eb6969;
   height: 36px;
   line-height: 36px;
 }
@@ -1871,7 +1739,7 @@ div#navbar.navbar nav.main-navigation.manifesto div.menu-comosantas-container ul
   background-color: #ffda9c;
 }
 div#navbar.navbar nav.main-navigation.manifesto div.menu-comosantas-container ul.nav-menu li a {
-  color: #3f3b3c;
+  color: #fff;
 }
 div#navbar.navbar:hover {
   width: 100%;

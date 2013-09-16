@@ -49,19 +49,6 @@ Text Domain: comosantas
 
 html
   margin: 0px !important
-div#wrap
-  height: 100%
-  position: relative
-div#main.loading
-  min-height: 200px
-  background: url(images/bg-white.jpg) repeat-y right
-  &:after
-    content: ''
-    background: url('images/ajax-loader.gif') no-repeat center center
-    width:55px
-    height:55px
-    margin: 60px auto 0
-    display: block
 
 /* estilos para perfect scrollbar */
 /* fueron eliminados los estilos del 
@@ -115,6 +102,7 @@ body
     position: absolute
     top: 0px
     left: 3%
+    background-position: -1px -2px
     a
       width: 84%
       height: 87%
@@ -141,6 +129,7 @@ body
       margin-left: -60px
 
 body.pages,
+body.error404,
 body.page
   *
     box-sizing: border-box
@@ -395,13 +384,13 @@ div#navbar.navbar
     transition: width 0.7s, font-size 1.5s
     width: 0%
     font-size: 0px
-    background-color: $verde_init
+    background-color: $rosa_lookbook
     margin-top: 40px
     div.menu-comosantas-container
       ul.nav-menu
         overflow: hidden
         margin-left: 114px
-        background-color: $verde_init
+        background-color: $rosa_lookbook
         height: 36px
         line-height: 36px
         li
@@ -441,7 +430,7 @@ div#navbar.navbar
           background-color: $amarillo_manifesto
           li
             a
-              color: $lookbook_color
+              color: white
   &:hover
     width: 100%
     nav.main-navigation

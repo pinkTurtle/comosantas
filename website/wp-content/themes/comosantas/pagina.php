@@ -46,11 +46,13 @@ $post_id = $wp_query->post->ID;
 $post = get_post( $post_id );
 $slug = $post->post_name;
 
+$lookbook = get_page_by_title('Lookbook');
+
 ?>
 <body class="pages">
 <div class="pages <?php echo $slug; ?>">
 <?php
-if (13 == $post->post_parent) {
+if ($lookbook->ID == $post->post_parent) {
 ?>
   <div class="lookbook_logo">
   <a href="<?php echo get_bloginfo('url'); ?>/lookbook/">

@@ -106,4 +106,28 @@ add_shortcode('gallery', 'santas_gallery');
 
 show_admin_bar(false);
 
+
+// removing admin menus en cms
+
+if (!current_user_can( 'manage_options' )) {
+
+function my_remove_menu_pages() {
+  remove_menu_page('themes.php');
+  //remove_menu_page('edit.php?post_type=acf');
+  remove_menu_page('index.php');
+  remove_menu_page('tools.php');
+  remove_menu_page('edit-comments.php');
+  remove_menu_page('plugins.php');
+  //remove_menu_page('edit.php?post_type=page');
+  remove_menu_page('edit.php');
+  remove_menu_page('users.php');
+  remove_menu_page('options-general.php');
+  //remove_menu_page('upload.php');
+  //remove_submenu_page('edit.php', 'edit-tags.php?taxonomy=category');
+  //remove_submenu_page('edit.php', 'edit-tags.php?taxonomy=post_tag');
+  }
+add_action( 'admin_menu', 'my_remove_menu_pages' );
+// end removing
+}
+
 ?>

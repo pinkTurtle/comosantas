@@ -130,4 +130,6 @@ add_action( 'admin_menu', 'my_remove_menu_pages' );
 // end removing
 }
 
+add_theme_support( 'post-thumbnails', array( 'page' ) );          // Pages only
+
 ?>

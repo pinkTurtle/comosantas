@@ -7,6 +7,7 @@ Template Name: Pagina inicial
 ?>
 
 <head>
+  <link href='http://fonts.googleapis.com/css?family=Cabin:700,400,500|Waiting+for+the+Sunrise|Lily+Script+One' rel='stylesheet' type='text/css'>
   <link rel="shortcut icon" href="/favicon.ico" />
   <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" type="text/css" />
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>

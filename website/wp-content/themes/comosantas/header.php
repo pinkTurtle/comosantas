@@ -19,6 +19,7 @@
 <html <?php language_attributes(); ?>>
 <!--<![endif]-->
 <head>
+  <link href='http://fonts.googleapis.com/css?family=Cabin:700,400,500|Waiting+for+the+Sunrise|Lily+Script+One' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" type="text/css" />
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width">

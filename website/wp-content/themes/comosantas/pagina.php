@@ -41,12 +41,14 @@ $(".quienessomos").perfectScrollbar({
 
 <?php
 
+$lb_slug = 'lookbook';
+
 global $wp_query;
 $post_id = $wp_query->post->ID;
 $post = get_post( $post_id );
 $slug = $post->post_name;
 
-$lookbook = get_page_by_title('Lookbook');
+$lookbook = get_page_by_title($lb_slug);
 
 ?>
 <body class="pages">
@@ -72,6 +74,59 @@ if ($lookbook->ID == $post->post_parent) {
 		<?php else : ?>
 			<?php get_template_part( 'content', 'none' ); ?>
 		<?php endif; ?>
+
+
+<?php if(is_page($lookbook->ID)) { ?>
+
+  <div class="menu">
+
+  <?php /* Pages level [1] */?>
+  <?php $args_pages_1 = array(
+    'sort_order' => 'ASC',
+    'sort_column' => 'menu_order',
+    'child_of' => $lookbook->ID,
+    'parent' => $lookbook->ID,
+    'post_type' => 'page',
+    'post_status' => 'publish'
+  ); 
+
+  $lookbook_hijas = get_pages($args_pages_1); 
+  ?>
+
+  <?php foreach($lookbook_hijas as $lh) : ?>
+    <?php
+      $lb_class = $lh->post_name;
+      $lb_link = get_permalink( $lh->ID );
+      $classes = array($lh->post_name);
+    ?>
+
+    <?php $str_class = ''; ?>
+    <?php foreach (get_post_class($classes, $lh->ID) as $cl) : ?>
+      <?php $str_class .= $cl . ' '; ?>
+    <?php endforeach; ?>
+
+    <div id="bloque-<?php echo $lh->ID; ?>" class="<?php echo $lb_slug.' '.$lb_class; ?>">
+      <?php if (has_post_thumbnail($lh->ID)) : ?> 
+        <?php $featured_image = get_the_post_thumbnail($lh->ID, 'thumbnail'); ?> 
+      <?php endif; ?>
+
+      <a href="<?php echo $lb_link; ?>">
+        <span class="img">
+          <?php echo get_the_post_thumbnail($lh->ID, 'thumbnail'); ?> 
+        </span>
+        <span class="bg">
+          <span class="title">
+            <?php echo $lh->post_title; ?>
+          </span>
+        </span>
+      </a>
+    </div>
+  <?php endforeach; ?>
+
+  <div class="clear"></div>
+  </div>
+
+<?php } ?>
 
 </div>
 

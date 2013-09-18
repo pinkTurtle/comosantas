@@ -208,36 +208,6 @@ table {
   border-spacing: 0;
 }
 /* commons */
-@font-face {
-  font-family: 'amatic-regular';
-  src: url("fonts/AmaticSC-Regular.ttf") format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'amatic-bold';
-  src: url("fonts/AmaticSC-Bold.ttf") format('truetype');
-  font-weight: normal;
-  font-style: bold;
-}
-@font-face {
-  font-family: 'waitingsunrise';
-  src: url("fonts/WaitingfortheSunrise.ttf") format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'cabin-regular';
-  src: url("fonts/CabinRegular.ttf") format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'cabin-bold';
-  src: url("fonts/Cabin-Bold.ttf") format('truetype');
-  font-weight: normal;
-  font-style: bold;
-}
 body {
   font: normal 12px/21px $regular;
   color: $text_color;
@@ -1195,6 +1165,11 @@ body div.logo.init {
   left: 50%;
   margin-left: -60px;
 }
+ul#menu-comosantas.nav-menu {
+  font-weight: bold;
+  line-height: 36px;
+  font-family: 'Cabin';
+}
 body.pages,
 body.error404,
 body.page {
@@ -1207,6 +1182,12 @@ body.page * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+body.pages * span,
+body.error404 * span,
+body.page * span {
+  margin: 0px;
+  padding: 0px;
 }
 body.pages div.pages,
 body.error404 div.pages,
@@ -1299,6 +1280,7 @@ body.pages div.pages.contacto p,
 body.error404 div.pages.contacto p,
 body.page div.pages.contacto p {
   font: 40px/20px waitingsunrise;
+  font-family: 'Waiting for the Sunrise';
   color: #fff;
   text-align: center;
   text-shadow: 3px 3px 7px #000;
@@ -1316,11 +1298,9 @@ body.page div.pages.init div.menu-comosantas-container {
 body.pages div.pages.init div.menu-comosantas-container ul.nav-menu,
 body.error404 div.pages.init div.menu-comosantas-container ul.nav-menu,
 body.page div.pages.init div.menu-comosantas-container ul.nav-menu {
-  font: normal 16px cabin-bold;
   margin-top: 80px;
   background-color: #80cbb6;
   height: 36px;
-  line-height: 36px;
 }
 body.pages div.pages.init div.menu-comosantas-container ul.nav-menu li,
 body.error404 div.pages.init div.menu-comosantas-container ul.nav-menu li,
@@ -1504,87 +1484,65 @@ body.page div.pages.lookbook div.menu {
   width: 100%;
   height: 230px;
   position: absolute;
-  top: 50%;
+  top: 25%;
   left: 0px;
-  margin-top: -115px;
 }
-body.pages div.pages.lookbook div.menu ul,
-body.error404 div.pages.lookbook div.menu ul,
-body.page div.pages.lookbook div.menu ul {
-  height: 230px;
-  width: 100%;
-}
-body.pages div.pages.lookbook div.menu ul li,
-body.error404 div.pages.lookbook div.menu ul li,
-body.page div.pages.lookbook div.menu ul li {
+body.pages div.pages.lookbook div.menu div.lookbook,
+body.error404 div.pages.lookbook div.menu div.lookbook,
+body.page div.pages.lookbook div.menu div.lookbook {
   width: 33.33%;
-  height: 230px;
+  height: 260px;
   display: inline-block;
   float: left;
 }
-body.pages div.pages.lookbook div.menu ul li a,
-body.error404 div.pages.lookbook div.menu ul li a,
-body.page div.pages.lookbook div.menu ul li a {
-  background-image: url("images/sprite2.png");
+body.pages div.pages.lookbook div.menu div.lookbook a,
+body.error404 div.pages.lookbook div.menu div.lookbook a,
+body.page div.pages.lookbook div.menu div.lookbook a {
   height: 160px;
   width: 236px;
   display: block;
-  text-indent: -999999px;
-  font-size: 0px;
   margin: 0px auto;
 }
-body.pages div.pages.lookbook div.menu ul li a span,
-body.error404 div.pages.lookbook div.menu ul li a span,
-body.page div.pages.lookbook div.menu ul li a span {
-  position: relative;
+body.pages div.pages.lookbook div.menu div.lookbook a span.img,
+body.error404 div.pages.lookbook div.menu div.lookbook a span.img,
+body.page div.pages.lookbook div.menu div.lookbook a span.img {
+  width: 236px;
+  height: 160px;
+  overflow: hidden;
+  display: block;
+}
+body.pages div.pages.lookbook div.menu div.lookbook a span.img img,
+body.error404 div.pages.lookbook div.menu div.lookbook a span.img img,
+body.page div.pages.lookbook div.menu div.lookbook a span.img img {
+  width: 100%;
+  height: auto;
+}
+body.pages div.pages.lookbook div.menu div.lookbook a span.bg,
+body.error404 div.pages.lookbook div.menu div.lookbook a span.bg,
+body.page div.pages.lookbook div.menu div.lookbook a span.bg {
+  width: 216px;
+  height: 65px;
   display: block;
   background-image: url("images/sprite.png");
-  height: 70px;
-  width: 220px;
+  background-position: -92px -167px;
+  margin: 10px auto;
 }
-body.pages div.pages.lookbook div.menu ul li a span.option,
-body.error404 div.pages.lookbook div.menu ul li a span.option,
-body.page div.pages.lookbook div.menu ul li a span.option {
-  margin-top: 140px;
-  background-position: -90px -157px;
-}
-body.pages div.pages.lookbook div.menu ul li a span.name,
-body.error404 div.pages.lookbook div.menu ul li a span.name,
-body.page div.pages.lookbook div.menu ul li a span.name {
-  top: 28px;
-  left: 30px;
-  width: 170px;
-  height: 40px;
-}
-body.pages div.pages.lookbook div.menu ul li.home a,
-body.error404 div.pages.lookbook div.menu ul li.home a,
-body.page div.pages.lookbook div.menu ul li.home a {
-  background-position: 0px 0px;
-}
-body.pages div.pages.lookbook div.menu ul li.home a span.name,
-body.error404 div.pages.lookbook div.menu ul li.home a span.name,
-body.page div.pages.lookbook div.menu ul li.home a span.name {
-  background-position: -629px -360px;
-}
-body.pages div.pages.lookbook div.menu ul li.lenc a,
-body.error404 div.pages.lookbook div.menu ul li.lenc a,
-body.page div.pages.lookbook div.menu ul li.lenc a {
-  background-position: -238px -3px;
-}
-body.pages div.pages.lookbook div.menu ul li.lenc a span.name,
-body.error404 div.pages.lookbook div.menu ul li.lenc a span.name,
-body.page div.pages.lookbook div.menu ul li.lenc a span.name {
-  background-position: -592px -326px;
-}
-body.pages div.pages.lookbook div.menu ul li.cass a,
-body.error404 div.pages.lookbook div.menu ul li.cass a,
-body.page div.pages.lookbook div.menu ul li.cass a {
-  background-position: -477px -6px;
-}
-body.pages div.pages.lookbook div.menu ul li.cass a span.name,
-body.error404 div.pages.lookbook div.menu ul li.cass a span.name,
-body.page div.pages.lookbook div.menu ul li.cass a span.name {
-  background-position: -584px -290px;
+body.pages div.pages.lookbook div.menu div.lookbook a span.title,
+body.error404 div.pages.lookbook div.menu div.lookbook a span.title,
+body.page div.pages.lookbook div.menu div.lookbook a span.title {
+  width: 100%;
+  height: 100%;
+  display: block;
+  text-align: center;
+  font-family: 'Lily Script One', cursive;
+  font-size: 20px;
+  line-height: 65px;
+  -webkit-transform: matrix(1, -0.1, 0, 1, 0, 0);
+  -moz-transform: matrix(1, -0.1, 0, 1, 0, 0);
+  -o-transform: matrix(1, -0.1, 0, 1, 0, 0);
+  -ms-transform: matrix(1, -0.1, 0, 1, 0, 0);
+  transform: matrix(1, -0.1, 0, 1, 0, 0);
+  color: #ffda9c;
 }
 body.pages div.pages.lenceria,
 body.error404 div.pages.lenceria,
@@ -1672,7 +1630,6 @@ div#navbar.navbar div.logo {
   margin-left: 30px;
 }
 div#navbar.navbar nav.main-navigation {
-  font: normal 16px cabin-bold;
   -webkit-transition: width 0.7s, font-size 0.7s;
   -moz-transition: width 0.7s, font-size 0.7s;
   -o-transition: width 0.7s, font-size 0.7s;
@@ -1688,7 +1645,6 @@ div#navbar.navbar nav.main-navigation div.menu-comosantas-container ul.nav-menu 
   margin-left: 114px;
   background-color: #eb6969;
   height: 36px;
-  line-height: 36px;
 }
 div#navbar.navbar nav.main-navigation div.menu-comosantas-container ul.nav-menu li {
   text-align: center;

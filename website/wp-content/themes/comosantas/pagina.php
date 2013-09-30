@@ -112,7 +112,7 @@ if ($lookbook->ID == $post->post_parent) {
 
       <a href="<?php echo $lb_link; ?>">
         <span class="img">
-          <?php echo get_the_post_thumbnail($lh->ID, 'thumbnail'); ?> 
+          <?php echo get_the_post_thumbnail($lh->ID, 'medium'); ?> 
         </span>
         <span class="bg">
           <span class="title">

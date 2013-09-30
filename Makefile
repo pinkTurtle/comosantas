@@ -16,6 +16,8 @@ install:
 html:
 	jade sources/views/index.jade -O website/
 
+local-update:
+	`cat data/xifox_comosantas.sql | sed 's/comosantas.com.ar/localhost\/comosantas/g' > data/local.sql`
 
 css:
 	stylus sources/styles/style.styl -o $(WP_THEME)

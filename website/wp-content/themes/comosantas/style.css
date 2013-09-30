@@ -1486,31 +1486,15 @@ body.page div.pages.lookbook div.menu {
   position: absolute;
   top: 25%;
   left: 0px;
-<<<<<<< HEAD
+  text-align: center;
 }
 body.pages div.pages.lookbook div.menu div.lookbook,
 body.error404 div.pages.lookbook div.menu div.lookbook,
 body.page div.pages.lookbook div.menu div.lookbook {
-  width: 33.33%;
   height: 260px;
-=======
-  margin-top: -115px;
-  text-align: center;
-}
-body.pages div.pages.lookbook div.menu ul,
-body.error404 div.pages.lookbook div.menu ul,
-body.page div.pages.lookbook div.menu ul {
-  height: 230px;
-  width: 100%;
-}
-body.pages div.pages.lookbook div.menu ul li,
-body.error404 div.pages.lookbook div.menu ul li,
-body.page div.pages.lookbook div.menu ul li {
   width: 330px;
-  height: 230px;
->>>>>>> 1c93d4778fe386ca3eda83444d70184db013363b
   display: inline-block;
-  float: left;
+  float: none;
 }
 body.pages div.pages.lookbook div.menu div.lookbook a,
 body.error404 div.pages.lookbook div.menu div.lookbook a,
@@ -1647,20 +1631,11 @@ div#navbar.navbar div.logo {
   margin-left: 30px;
 }
 div#navbar.navbar nav.main-navigation {
-<<<<<<< HEAD
-  -webkit-transition: width 0.7s, font-size 0.7s;
-  -moz-transition: width 0.7s, font-size 0.7s;
-  -o-transition: width 0.7s, font-size 0.7s;
-  -ms-transition: width 0.7s, font-size 0.7s;
-  transition: width 0.7s, font-size 0.7s;
-=======
-  font: normal 16px cabin-bold;
   -webkit-transition: normalize('transition', width 0.7s, font-size 0.7s, webkit);
   -moz-transition: normalize('transition', width 0.7s, font-size 0.7s, moz);
   -o-transition: normalize('transition', width 0.7s, font-size 0.7s, o);
   -ms-transition: normalize('transition', width 0.7s, font-size 0.7s, ms);
   transition: normalize('transition', width 0.7s, font-size 0.7s);
->>>>>>> 1c93d4778fe386ca3eda83444d70184db013363b
   width: 0%;
   font-size: 0px;
   background-color: #eb6969;

@@ -1481,8 +1481,8 @@ body.page div.pages.lookbook {
 body.pages div.pages.lookbook div.menu,
 body.error404 div.pages.lookbook div.menu,
 body.page div.pages.lookbook div.menu {
-  top: 24%;
   left: 0px;
+  margin-left: 170px;
   text-align: center;
 }
 body.pages div.pages.lookbook div.menu div.lookbook,

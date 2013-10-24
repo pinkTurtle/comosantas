@@ -1482,7 +1482,7 @@ body.pages div.pages.lookbook div.menu,
 body.error404 div.pages.lookbook div.menu,
 body.page div.pages.lookbook div.menu {
   left: 0px;
-  margin-left: 170px;
+  margin-top: 170px;
   text-align: center;
 }
 body.pages div.pages.lookbook div.menu div.lookbook,

@@ -1137,6 +1137,9 @@ body.corazones-verde {
 body.verde-verde {
   background: url("images/green_bg.jpg") transparent repeat;
 }
+body.lunares-verde {
+  background: url("images/moles_01_bg_tile.jpg") transparent repeat;
+}
 body div.logo {
   width: 98px;
   height: 160px;
@@ -1218,12 +1221,6 @@ body.page div.pages div.splash {
   margin-top: -364px;
   left: 50%;
   margin-left: -341px;
-}
-body.pages div.pages.manifesto,
-body.error404 div.pages.manifesto,
-body.page div.pages.manifesto {
-  background-image: url("images/moles_01_bg_tile.jpg");
-  background-repeat: repeat;
 }
 body.pages div.pages.quienes-somos,
 body.error404 div.pages.quienes-somos,

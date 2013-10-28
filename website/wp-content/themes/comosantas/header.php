@@ -54,7 +54,15 @@ $slug = $post->post_name;
 
 ?>
 
-<body <?php body_class(); ?>>
+<?php 
+  if (isset(simple_fields_value('bgimage')[selected_value])):
+  $bgclass = simple_fields_value('bgimage')[selected_value];
+  else:
+  $bgclass = "";
+  endif;
+?>
+
+<body <?php body_class($bgclass); ?>>
   <?php include_once 'functions.php'; ?>
 	<div id="page" class="hfeed site">
 		<header id="masthead" class="site-header" role="banner">

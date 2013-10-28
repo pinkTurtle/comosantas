@@ -1125,6 +1125,18 @@ body #page {
 body #page #main {
   height: 100%;
 }
+body.corazones-salmon {
+  background: url("images/heart_01_bg_tile.jpg") transparent repeat;
+}
+body.corazones-rosa {
+  background: url("images/heart_03_bg_tile.jpg") transparent repeat;
+}
+body.corazones-verde {
+  background: url("images/heart_02_bg_tile.jpg") transparent repeat;
+}
+body.verde-verde {
+  background: url("images/green_bg.jpg") transparent repeat;
+}
 body div.logo {
   width: 98px;
   height: 160px;
@@ -1472,12 +1484,6 @@ body.page div.pages.cuatrocerocuatro p {
   text-align: center;
   text-shadow: 3px 3px 7px #000;
 }
-body.pages div.pages.lookbook,
-body.error404 div.pages.lookbook,
-body.page div.pages.lookbook {
-  background-image: url("images/green_bg.jpg");
-  background-repeat: repeat;
-}
 body.pages div.pages.lookbook div.menu,
 body.error404 div.pages.lookbook div.menu,
 body.page div.pages.lookbook div.menu {
@@ -1589,26 +1595,6 @@ body.page div.pages.home-and-pjs div.lookbook_logo a {
   display: block;
   height: 100%;
   width: 100%;
-}
-body.pages div.pages.home-and-pjs,
-body.error404 div.pages.home-and-pjs,
-body.page div.pages.home-and-pjs {
-  background-image: url("images/heart_01_bg_tile.jpg");
-}
-body.pages div.pages.casual,
-body.error404 div.pages.casual,
-body.page div.pages.casual {
-  background-image: url("images/heart_03_bg_tile.jpg");
-}
-body.pages div.pages.lenceria,
-body.error404 div.pages.lenceria,
-body.page div.pages.lenceria {
-  background-image: url("images/heart_02_bg_tile.jpg");
-}
-body.pages div.pages.test,
-body.error404 div.pages.test,
-body.page div.pages.test {
-  background-image: url("images/heart_01_bg_tile.jpg");
 }
 div#navbar.navbar {
   z-index: 15;

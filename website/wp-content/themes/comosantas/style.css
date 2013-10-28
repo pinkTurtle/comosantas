@@ -1210,6 +1210,11 @@ body.page div.pages {
   padding-top: 1px;
   height: 100%;
 }
+body.pages div.pages article,
+body.error404 div.pages article,
+body.page div.pages article {
+  padding-bottom: 30px;
+}
 body.pages div.pages div.splash,
 body.error404 div.pages div.splash,
 body.page div.pages div.splash {

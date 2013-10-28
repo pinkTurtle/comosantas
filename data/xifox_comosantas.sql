@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tiempo de generación: 28-10-2013 a las 15:13:13
+-- Tiempo de generación: 28-10-2013 a las 17:00:43
 -- Versión del servidor: 5.1.70-cll
 -- Versión de PHP: 5.3.17
 
@@ -109,7 +109,7 @@ CREATE TABLE IF NOT EXISTS `wp_options` (
   `autoload` varchar(20) NOT NULL DEFAULT 'yes',
   PRIMARY KEY (`option_id`),
   UNIQUE KEY `option_name` (`option_name`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1247 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1251 ;
 
 --
 -- Volcado de datos para la tabla `wp_options`
@@ -272,7 +272,7 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (604, 'wpseo', 'a:5:{s:20:"disableadvanced_meta";s:2:"on";s:7:"version";s:6:"1.4.15";s:11:"theme_check";a:1:{s:11:"description";b:1;}s:14:"tracking_popup";s:4:"done";s:11:"ignore_tour";s:6:"ignore";}', 'yes'),
 (605, 'wpseo_titles', 'a:13:{s:10:"title-home";s:42:"%%sitename%% %%page%% %%sep%% %%sitedesc%%";s:12:"title-author";s:42:"%%name%%, Author at %%sitename%% %%page%% ";s:13:"title-archive";s:38:"%%date%% %%page%% %%sep%% %%sitename%%";s:12:"title-search";s:63:"You searched for %%searchphrase%% %%page%% %%sep%% %%sitename%%";s:9:"title-404";s:35:"Page Not Found %%sep%% %%sitename%%";s:15:"noindex-archive";s:2:"on";s:19:"noindex-post_format";s:2:"on";s:10:"title-post";s:39:"%%title%% %%page%% %%sep%% %%sitename%%";s:10:"title-page";s:39:"%%title%% %%page%% %%sep%% %%sitename%%";s:16:"title-attachment";s:39:"%%title%% %%page%% %%sep%% %%sitename%%";s:14:"title-category";s:53:"%%term_title%% Archives %%page%% %%sep%% %%sitename%%";s:14:"title-post_tag";s:53:"%%term_title%% Archives %%page%% %%sep%% %%sitename%%";s:17:"title-post_format";s:53:"%%term_title%% Archives %%page%% %%sep%% %%sitename%%";}', 'yes'),
 (1243, 'simple_fields_db_version', '2', 'yes'),
-(1244, 'simple_fields_groups', 'a:1:{i:1;a:12:{s:2:"id";i:1;s:3:"key";s:15:"backgroundimage";s:4:"slug";s:15:"backgroundimage";s:4:"name";s:16:"background-image";s:11:"description";s:39:"Para configurar el fondo de las paginas";s:10:"repeatable";b:0;s:6:"fields";a:1:{i:2;a:12:{s:4:"name";s:15:"Imagen de Fondo";s:4:"slug";s:7:"gbimage";s:11:"description";s:43:"Imagen de fondo para las diferentes paginas";s:4:"type";s:12:"radiobuttons";s:7:"options";a:4:{s:7:"divider";a:1:{s:10:"appearance";s:4:"line";}s:7:"date_v2";a:3:{s:7:"show_as";s:4:"date";s:4:"show";s:6:"always";s:12:"default_date";s:7:"no_date";}s:4:"text";a:3:{s:7:"subtype";s:4:"text";s:11:"placeholder";s:0:"";s:10:"attributes";s:0:"";}s:8:"textarea";a:1:{s:11:"placeholder";s:0:"";}}s:21:"type_textarea_options";a:1:{s:11:"size_height";s:7:"default";}s:17:"type_post_options";a:1:{s:20:"additional_arguments";s:0:"";}s:25:"type_taxonomyterm_options";a:1:{s:20:"additional_arguments";s:0:"";}s:25:"type_radiobuttons_options";a:4:{s:17:"radiobutton_num_2";a:2:{s:5:"value";s:22:"VerdeClaro/VerdeOscuro";s:7:"deleted";s:1:"0";}s:17:"radiobutton_num_3";a:2:{s:5:"value";s:14:"Corazones/Rosa";s:7:"deleted";s:1:"0";}s:17:"radiobutton_num_4";a:2:{s:5:"value";s:16:"Corazones/Salmon";s:7:"deleted";s:1:"0";}s:17:"radiobutton_num_5";a:2:{s:5:"value";s:15:"Corazones/Verde";s:7:"deleted";s:1:"0";}}s:21:"type_dropdown_options";a:1:{s:15:"enable_multiple";s:1:"0";}s:2:"id";s:1:"2";s:7:"deleted";s:1:"0";}}s:14:"fields_by_slug";a:0:{}s:7:"deleted";b:0;s:8:"gui_view";s:4:"list";s:15:"added_with_code";b:0;s:12:"fields_count";i:1;}}', 'yes'),
+(1244, 'simple_fields_groups', 'a:1:{i:1;a:12:{s:2:"id";i:1;s:3:"key";s:15:"backgroundimage";s:4:"slug";s:15:"backgroundimage";s:4:"name";s:15:"Imagen de fondo";s:11:"description";s:52:"Para configurar las imagenes de fondo de las paginas";s:10:"repeatable";b:0;s:6:"fields";a:1:{i:2;a:12:{s:4:"name";s:15:"Imagen de Fondo";s:4:"slug";s:7:"bgimage";s:11:"description";s:43:"Imagen de fondo para las diferentes paginas";s:4:"type";s:12:"radiobuttons";s:7:"options";a:4:{s:7:"divider";a:1:{s:10:"appearance";s:4:"line";}s:7:"date_v2";a:3:{s:7:"show_as";s:4:"date";s:4:"show";s:6:"always";s:12:"default_date";s:7:"no_date";}s:4:"text";a:3:{s:7:"subtype";s:4:"text";s:11:"placeholder";s:0:"";s:10:"attributes";s:0:"";}s:8:"textarea";a:1:{s:11:"placeholder";s:0:"";}}s:21:"type_textarea_options";a:1:{s:11:"size_height";s:7:"default";}s:17:"type_post_options";a:1:{s:20:"additional_arguments";s:0:"";}s:25:"type_taxonomyterm_options";a:1:{s:20:"additional_arguments";s:0:"";}s:25:"type_radiobuttons_options";a:7:{s:29:"enable_extended_return_values";s:1:"1";s:17:"radiobutton_num_2";a:2:{s:5:"value";s:11:"verde-verde";s:7:"deleted";s:1:"0";}s:17:"radiobutton_num_3";a:2:{s:5:"value";s:14:"corazones-rosa";s:7:"deleted";s:1:"0";}s:22:"checked_by_default_num";s:17:"radiobutton_num_3";s:17:"radiobutton_num_4";a:2:{s:5:"value";s:16:"corazones-salmon";s:7:"deleted";s:1:"0";}s:17:"radiobutton_num_5";a:2:{s:5:"value";s:15:"corazones-verde";s:7:"deleted";s:1:"0";}s:17:"radiobutton_num_7";a:2:{s:5:"value";s:13:"lunares-verde";s:7:"deleted";s:1:"0";}}s:21:"type_dropdown_options";a:1:{s:15:"enable_multiple";s:1:"0";}s:2:"id";s:1:"2";s:7:"deleted";s:1:"0";}}s:14:"fields_by_slug";a:0:{}s:7:"deleted";b:0;s:8:"gui_view";s:4:"list";s:15:"added_with_code";b:0;s:12:"fields_count";i:1;}}', 'yes'),
 (1239, '_transient_timeout_feed_mod_867bd5c64f85878d03a060509cd2f92c', '1383029227', 'no'),
 (1240, '_transient_feed_mod_867bd5c64f85878d03a060509cd2f92c', '1382986027', 'no'),
 (1241, '_transient_timeout_dash_aa95765b5cc111c56d5993d476b1c2f0', '1383029227', 'no'),
@@ -329,7 +329,7 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (1212, '_site_transient_browser_8dd40c122c3d90b2841f02fbb7822f3e', 'a:9:{s:8:"platform";s:5:"Linux";s:4:"name";s:6:"Chrome";s:7:"version";s:12:"31.0.1650.26";s:10:"update_url";s:28:"http://www.google.com/chrome";s:7:"img_src";s:49:"http://s.wordpress.org/images/browsers/chrome.png";s:11:"img_src_ssl";s:48:"https://wordpress.org/images/browsers/chrome.png";s:15:"current_version";s:2:"18";s:7:"upgrade";b:0;s:8:"insecure";b:0;}', 'yes'),
 (939, '_site_transient_timeout_browser_bef8ab52ade1826ae6dab4fa2976a3db', '1381784668', 'yes'),
 (940, '_site_transient_browser_bef8ab52ade1826ae6dab4fa2976a3db', 'a:9:{s:8:"platform";s:9:"Macintosh";s:4:"name";s:6:"Chrome";s:7:"version";s:12:"30.0.1599.69";s:10:"update_url";s:28:"http://www.google.com/chrome";s:7:"img_src";s:49:"http://s.wordpress.org/images/browsers/chrome.png";s:11:"img_src_ssl";s:48:"https://wordpress.org/images/browsers/chrome.png";s:15:"current_version";s:2:"18";s:7:"upgrade";b:0;s:8:"insecure";b:0;}', 'yes'),
-(1245, 'simple_fields_post_connectors', 'a:1:{i:1;a:10:{s:2:"id";i:1;s:3:"key";s:16:"bgimageconnector";s:4:"slug";s:16:"bgimageconnector";s:4:"name";s:16:"background image";s:12:"field_groups";a:1:{i:1;a:5:{s:2:"id";s:1:"1";s:4:"name";s:16:"background-image";s:7:"deleted";s:1:"0";s:7:"context";s:6:"normal";s:8:"priority";s:3:"low";}}s:10:"post_types";a:1:{i:0;s:4:"page";}s:7:"deleted";b:0;s:11:"hide_editor";b:1;s:15:"added_with_code";b:0;s:18:"field_groups_count";i:1;}}', 'yes'),
+(1245, 'simple_fields_post_connectors', 'a:1:{i:1;a:10:{s:2:"id";i:1;s:3:"key";s:16:"bgimageconnector";s:4:"slug";s:16:"bgimageconnector";s:4:"name";s:16:"background image";s:12:"field_groups";a:1:{i:1;a:5:{s:2:"id";s:1:"1";s:4:"name";s:15:"Imagen de fondo";s:7:"deleted";s:1:"0";s:7:"context";s:6:"normal";s:8:"priority";s:3:"low";}}s:10:"post_types";a:1:{i:0;s:4:"page";}s:7:"deleted";b:0;s:11:"hide_editor";b:0;s:15:"added_with_code";b:0;s:18:"field_groups_count";i:1;}}', 'yes'),
 (1185, '_site_transient_timeout_browser_534c07c4c06c14de70178e1296fcf30e', '1383338150', 'yes'),
 (1186, '_site_transient_browser_534c07c4c06c14de70178e1296fcf30e', 'a:9:{s:8:"platform";s:7:"Windows";s:4:"name";s:6:"Chrome";s:7:"version";s:13:"30.0.1599.101";s:10:"update_url";s:28:"http://www.google.com/chrome";s:7:"img_src";s:49:"http://s.wordpress.org/images/browsers/chrome.png";s:11:"img_src_ssl";s:48:"https://wordpress.org/images/browsers/chrome.png";s:15:"current_version";s:2:"18";s:7:"upgrade";b:0;s:8:"insecure";b:0;}', 'yes'),
 (379, '_site_transient_timeout_browser_e1d99ccb378141f0b24f490da8820439', '1379534125', 'yes'),
@@ -352,7 +352,7 @@ CREATE TABLE IF NOT EXISTS `wp_postmeta` (
   PRIMARY KEY (`meta_id`),
   KEY `post_id` (`post_id`),
   KEY `meta_key` (`meta_key`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=396 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=435 ;
 
 --
 -- Volcado de datos para la tabla `wp_postmeta`
@@ -361,15 +361,15 @@ CREATE TABLE IF NOT EXISTS `wp_postmeta` (
 INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUES
 (1, 2, '_wp_page_template', 'pagina.php'),
 (22, 16, '_menu_item_target', ''),
-(8, 8, '_edit_last', '5'),
+(8, 8, '_edit_last', '3'),
 (9, 8, '_wp_page_template', 'pagina.php'),
-(10, 8, '_edit_lock', '1382986630:3'),
-(11, 2, '_edit_lock', '1382986538:3'),
+(10, 8, '_edit_lock', '1382993827:3'),
+(11, 2, '_edit_lock', '1382992399:3'),
 (12, 2, '_edit_last', '3'),
 (49, 22, '_menu_item_menu_item_parent', '0'),
 (48, 22, '_menu_item_type', 'post_type'),
 (15, 12, '_edit_last', '3'),
-(16, 12, '_edit_lock', '1382986725:3'),
+(16, 12, '_edit_lock', '1382993997:3'),
 (17, 12, '_wp_page_template', 'pagina.php'),
 (18, 16, '_menu_item_type', 'post_type'),
 (19, 16, '_menu_item_menu_item_parent', '0'),
@@ -417,11 +417,11 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (72, 24, '_menu_item_xfn', ''),
 (73, 24, '_menu_item_url', ''),
 (74, 24, '_menu_item_orphaned', '1378419274'),
-(121, 43, '_edit_lock', '1382987320:3'),
-(120, 43, '_edit_last', '5'),
+(121, 43, '_edit_lock', '1382991499:3'),
+(120, 43, '_edit_last', '3'),
 (119, 41, '_wp_page_template', 'pagina.php'),
-(118, 41, '_edit_lock', '1382125408:5'),
-(117, 41, '_edit_last', '5'),
+(118, 41, '_edit_lock', '1382993607:3'),
+(117, 41, '_edit_last', '3'),
 (90, 28, '_menu_item_xfn', ''),
 (91, 28, '_menu_item_url', ''),
 (105, 33, '_menu_item_xfn', ''),
@@ -681,7 +681,40 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (392, 29, '_yoast_wpseo_title', ''),
 (393, 29, '_yoast_wpseo_metadesc', ''),
 (394, 29, '_yoast_wpseo_opengraph-description', ''),
-(395, 29, '_yoast_wpseo_google-plus-description', '');
+(395, 29, '_yoast_wpseo_google-plus-description', ''),
+(396, 12, '_simple_fields_selected_connector', '1'),
+(397, 12, '_simple_fields_been_saved', '1'),
+(401, 12, '_simple_fields_fieldGroupID_1_fieldID_2_numInSet_0', 'radiobutton_num_2'),
+(400, 12, '_simple_fields_fieldGroupID_1_fieldID_added_numInSet_0', '1'),
+(402, 8, '_simple_fields_selected_connector', '1'),
+(403, 8, '_simple_fields_been_saved', '1'),
+(434, 8, '_simple_fields_fieldGroupID_1_fieldID_2_numInSet_0', 'radiobutton_num_4'),
+(433, 8, '_simple_fields_fieldGroupID_1_fieldID_added_numInSet_0', '1'),
+(406, 43, '_simple_fields_selected_connector', '1'),
+(407, 43, '_simple_fields_been_saved', '1'),
+(408, 43, '_simple_fields_fieldGroupID_1_fieldID_added_numInSet_0', '1'),
+(409, 43, '_simple_fields_fieldGroupID_1_fieldID_2_numInSet_0', 'radiobutton_num_5'),
+(410, 41, '_simple_fields_selected_connector', '1'),
+(411, 41, '_simple_fields_been_saved', '1'),
+(432, 41, '_simple_fields_fieldGroupID_1_fieldID_2_numInSet_0', 'radiobutton_num_3'),
+(431, 41, '_simple_fields_fieldGroupID_1_fieldID_added_numInSet_0', '1'),
+(414, 2, '_simple_fields_selected_connector', '1'),
+(415, 2, '_simple_fields_been_saved', '1'),
+(416, 2, '_simple_fields_fieldGroupID_1_fieldID_added_numInSet_0', '1'),
+(417, 2, '_simple_fields_fieldGroupID_1_fieldID_2_numInSet_0', 'radiobutton_num_7'),
+(418, 2, '_yoast_wpseo_focuskw', ''),
+(419, 2, '_yoast_wpseo_title', ''),
+(420, 2, '_yoast_wpseo_metadesc', ''),
+(421, 2, '_yoast_wpseo_meta-robots-noindex', '0'),
+(422, 2, '_yoast_wpseo_meta-robots-nofollow', '0'),
+(423, 2, '_yoast_wpseo_meta-robots-adv', 'none'),
+(424, 2, '_yoast_wpseo_sitemap-include', '-'),
+(425, 2, '_yoast_wpseo_sitemap-prio', '-'),
+(426, 2, '_yoast_wpseo_sitemap-html-include', '-'),
+(427, 2, '_yoast_wpseo_canonical', ''),
+(428, 2, '_yoast_wpseo_redirect', ''),
+(429, 2, '_yoast_wpseo_opengraph-description', ''),
+(430, 2, '_yoast_wpseo_google-plus-description', '');
 
 -- --------------------------------------------------------
 
@@ -726,14 +759,14 @@ CREATE TABLE IF NOT EXISTS `wp_posts` (
 
 INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, `post_excerpt`, `post_status`, `comment_status`, `ping_status`, `post_password`, `post_name`, `to_ping`, `pinged`, `post_modified`, `post_modified_gmt`, `post_content_filtered`, `post_parent`, `guid`, `menu_order`, `post_type`, `post_mime_type`, `comment_count`) VALUES
 (1, 2, '2013-09-04 12:57:47', '2013-09-04 12:57:47', 'Bienvenido a WordPress. Esta es tu primera entrada. Edítala o bórrala, ¡y comienza a publicar!.', '¡Hola mundo!', '', 'publish', 'open', 'open', '', 'hola-mundo', '', '', '2013-09-04 12:57:47', '2013-09-04 12:57:47', '', 0, 'http://comosantas.com.ar/?p=1', 0, 'post', '', 1),
-(2, 2, '2013-09-04 12:57:47', '2013-09-04 12:57:47', '<div class="splash"></div>', 'Manifesto', '', 'publish', 'open', 'open', '', 'manifesto', '', '', '2013-09-06 14:38:49', '2013-09-06 14:38:49', '', 0, 'http://comosantas.com.ar/?page_id=2', 0, 'page', '', 0),
+(2, 2, '2013-09-04 12:57:47', '2013-09-04 12:57:47', '<div class="splash"></div>', 'Manifesto', '', 'publish', 'open', 'open', '', 'manifesto', '', '', '2013-10-28 20:28:59', '2013-10-28 20:28:59', '', 0, 'http://comosantas.com.ar/?page_id=2', 0, 'page', '', 0),
 (11, 3, '2013-09-05 18:51:44', '2013-09-05 18:51:44', '', 'menu', '', 'inherit', 'open', 'open', '', '2-revision-v1', '', '', '2013-09-05 18:51:44', '2013-09-05 18:51:44', '', 2, 'http://comosantas.com.ar/2-revision-v1/', 0, 'revision', '', 0),
-(12, 3, '2013-09-05 18:53:10', '2013-09-05 18:53:10', '', 'Lookbook', '', 'publish', 'open', 'open', '', 'lookbook', '', '', '2013-09-18 21:20:02', '2013-09-18 21:20:02', '', 0, 'http://comosantas.com.ar/?page_id=12', 0, 'page', '', 0),
+(12, 3, '2013-09-05 18:53:10', '2013-09-05 18:53:10', '', 'Lookbook', '', 'publish', 'open', 'open', '', 'lookbook', '', '', '2013-10-28 20:12:11', '2013-10-28 20:12:11', '', 0, 'http://comosantas.com.ar/?page_id=12', 0, 'page', '', 0),
 (13, 3, '2013-09-05 18:53:10', '2013-09-05 18:53:10', '', 'homwear', '', 'inherit', 'open', 'open', '', '12-revision-v1', '', '', '2013-09-05 18:53:10', '2013-09-05 18:53:10', '', 12, 'http://comosantas.com.ar/12-revision-v1/', 0, 'revision', '', 0),
 (14, 3, '2013-09-05 18:53:22', '2013-09-05 18:53:22', '', 'homewear', '', 'inherit', 'open', 'open', '', '12-revision-v1', '', '', '2013-09-05 18:53:22', '2013-09-05 18:53:22', '', 12, 'http://comosantas.com.ar/12-revision-v1/', 0, 'revision', '', 0),
 (102, 5, '2013-10-18 18:56:09', '2013-10-18 18:56:09', '', '1', '', 'inherit', 'open', 'open', '', '1', '', '', '2013-10-18 18:56:09', '2013-10-18 18:56:09', '', 41, 'http://comosantas.com.ar/wp-content/uploads/2013/09/1.jpg', 0, 'attachment', 'image/jpeg', 0),
 (16, 3, '2013-09-05 22:08:38', '2013-09-05 22:08:38', ' ', '', '', 'publish', 'open', 'open', '', '16', '', '', '2013-09-06 11:54:56', '2013-09-06 11:54:56', '', 0, 'http://comosantas.com.ar/?p=16', 2, 'nav_menu_item', '', 0),
-(8, 3, '2013-09-05 15:07:15', '2013-09-05 15:07:15', '[gallery ids="151,150,149,133,129,128,127,131,126,119,118"]', 'Linea casi Santas', '', 'publish', 'open', 'open', '', 'home-and-pjs', '', '', '2013-10-18 19:50:25', '2013-10-18 19:50:25', '', 12, 'http://comosantas.com.ar/?page_id=8', 0, 'page', '', 0),
+(8, 3, '2013-09-05 15:07:15', '2013-09-05 15:07:15', '[gallery ids="151,150,149,133,129,128,127,131,126,119,118"]', 'Linea casi Santas', '', 'publish', 'open', 'open', '', 'home-and-pjs', '', '', '2013-10-28 20:53:49', '2013-10-28 20:53:49', '', 12, 'http://comosantas.com.ar/?page_id=8', 0, 'page', '', 0),
 (9, 3, '2013-09-05 15:07:15', '2013-09-05 15:07:15', '', '', '', 'inherit', 'open', 'open', '', '8-revision-v1', '', '', '2013-09-05 15:07:15', '2013-09-05 15:07:15', '', 8, 'http://comosantas.com.ar/?p=9', 0, 'revision', '', 0),
 (7, 3, '2013-09-04 19:19:58', '2013-09-04 19:19:58', '', 'landing_page', '', 'inherit', 'open', 'open', '', 'landing_page', '', '', '2013-09-04 19:19:58', '2013-09-04 19:19:58', '', 0, 'http://comosantas.com.ar/wp-content/uploads/2013/09/landing_page.jpg', 0, 'attachment', 'image/jpeg', 0),
 (10, 3, '2013-09-05 15:07:41', '2013-09-05 15:07:41', '', 'como santas', '', 'inherit', 'open', 'open', '', '8-revision-v1', '', '', '2013-09-05 15:07:41', '2013-09-05 15:07:41', '', 8, 'http://comosantas.com.ar/8-revision-v1/', 0, 'revision', '', 0),
@@ -758,9 +791,9 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (38, 3, '2013-09-06 17:26:48', '2013-09-06 17:26:48', '<ul>\r\n  <li class="star">\r\n  </li>\r\n  <li class="star">\r\n  </li>\r\n  <li class="star">\r\n  </li>\r\n</ul>\r\n<p>e-mail: comosantas@gmail.com\r\n</p>\r\n<p>(011)1557736804\r\n</p>\r\n<p>Facebook: Como Santas\r\n</p>\r\n<p>Local Cipolletti - Rio Negro\r\n</p>\r\n<p>Roca 39\r\n</p>\r\n<p>(0299)4777335\r\n</p>\r\n', 'Contacto', '', 'inherit', 'open', 'open', '', '29-revision-v1', '', '', '2013-09-06 17:26:48', '2013-09-06 17:26:48', '', 29, 'http://comosantas.com.ar/29-revision-v1/', 0, 'revision', '', 0),
 (39, 3, '2013-09-06 18:32:55', '2013-09-06 18:32:55', '<div class="quienes">\r\n\r\n<p>Somos una empresa joven, en expansión,\r\ndedicada a la producción de lencería, ropa interior y homewear\r\nque se destaca por sus diseños propios y originales y una delicada selección de\r\nmateriales con los que luego confeccionamos esas prendas que te hacen única.</p>\r\n<p>Trabajamos con el concepto de distinguir nuestros productos dentro de un mercado donde\r\ncomunmente se encuentran prendas íntimas clásicas a las que ya no debemos\r\nacostumbrarnos. Para romper con los moldes de los cánones tradicionales de lencería,\r\nen Como Santas renovamos constantemente nuestras líneas,\r\nofreciendo una gran cantidad de productos de modo de satisfacer a cada mujer,\r\nrespetando su estilo, especial e irrepetible.</p>\r\n<p>Atendiendo a los detalles, buscamos el equilibrio entre lo innovador y lo cómodo,\r\nsin perder de vista la naturaleza de los productos. La calidad de cada prenda es nuestra premisa\r\na la hora de crear. Tanto en los materiales que la componen, ya sea algodón elastizado,\r\ntricot, microfibras, elásticos, tul bordado, encajes o puntillas,\r\ncomo en su cuidadosa confección y acabado.</p>\r\n<p>La fibra de Como Santas atraviesa cada diseño, adaptado a la vanguardia y a las curvas\r\nfemeninas con originalidad, combinando materiales y poniendo la imaginación a crear para transmitir\r\nlas nuevas tendencias al mundo de la ropa interior.</p>\r\n<p>Somos como vos. Como ustedes. Como todas, diferentes. Como Santas. Casi casi, pero no.</p>\r\n</div><!-- texto quienes somos -->\r\n\r\n', 'Quienes Somos', '', 'inherit', 'open', 'open', '', '31-revision-v1', '', '', '2013-09-06 18:32:55', '2013-09-06 18:32:55', '', 31, 'http://comosantas.com.ar/31-revision-v1/', 0, 'revision', '', 0),
 (40, 3, '2013-09-09 11:37:29', '2013-09-09 11:37:29', '', 'home-and-pjs', '', 'inherit', 'open', 'open', '', '8-revision-v1', '', '', '2013-09-09 11:37:29', '2013-09-09 11:37:29', '', 8, 'http://comosantas.com.ar/8-revision-v1/', 0, 'revision', '', 0),
-(41, 3, '2013-09-09 11:37:44', '2013-09-09 11:37:44', '[gallery columns="9" ids="102,103,104,105,106,107,108,110,113,114,115,116,117,120,121,122,124,125"]', 'Linea Santas', '', 'publish', 'open', 'open', '', 'casual', '', '', '2013-10-18 19:40:01', '2013-10-18 19:40:01', '', 12, 'http://comosantas.com.ar/?page_id=41', 0, 'page', '', 0),
+(41, 3, '2013-09-09 11:37:44', '2013-09-09 11:37:44', '[gallery columns="9" ids="102,103,104,105,106,107,108,110,113,114,115,116,117,120,121,122,124,125"]', 'Linea Santas', '', 'publish', 'open', 'open', '', 'casual', '', '', '2013-10-28 20:53:27', '2013-10-28 20:53:27', '', 12, 'http://comosantas.com.ar/?page_id=41', 0, 'page', '', 0),
 (42, 3, '2013-09-09 11:37:44', '2013-09-09 11:37:44', '', 'casual', '', 'inherit', 'open', 'open', '', '41-revision-v1', '', '', '2013-09-09 11:37:44', '2013-09-09 11:37:44', '', 41, 'http://comosantas.com.ar/41-revision-v1/', 0, 'revision', '', 0),
-(43, 3, '2013-09-09 11:38:02', '2013-09-09 11:38:02', '[gallery ids="146,145,144,142,138,139,140,141,136,135,131"]', 'Linea de Santas nada', '', 'publish', 'open', 'open', '', 'lenceria', '', '', '2013-10-18 19:53:33', '2013-10-18 19:53:33', '', 12, 'http://comosantas.com.ar/?page_id=43', 0, 'page', '', 0),
+(43, 3, '2013-09-09 11:38:02', '2013-09-09 11:38:02', '[gallery ids="146,145,144,142,138,139,140,141,136,135,131"]', 'Linea de Santas nada', '', 'publish', 'open', 'open', '', 'lenceria', '', '', '2013-10-28 20:18:18', '2013-10-28 20:18:18', '', 12, 'http://comosantas.com.ar/?page_id=43', 0, 'page', '', 0),
 (44, 3, '2013-09-09 11:38:02', '2013-09-09 11:38:02', '', 'lenceria', '', 'inherit', 'open', 'open', '', '43-revision-v1', '', '', '2013-09-09 11:38:02', '2013-09-09 11:38:02', '', 43, 'http://comosantas.com.ar/43-revision-v1/', 0, 'revision', '', 0),
 (88, 3, '2013-09-18 21:20:02', '2013-09-18 21:20:02', '', 'Lookbook', '', 'inherit', 'open', 'open', '', '12-revision-v1', '', '', '2013-09-18 21:20:02', '2013-09-18 21:20:02', '', 12, 'http://comosantas.com.ar/12-revision-v1/', 0, 'revision', '', 0),
 (45, 3, '2013-09-09 11:38:35', '2013-09-09 11:38:35', '  <div class="menu">\r\n    <ul>\r\n      <li class="home">\r\n        <a href="home-and-pjs">Homewear and pj''s\r\n          <span class="option"><span class="name"></span></span>\r\n        </a>\r\n      </li>\r\n      <li class="lenc">\r\n        <a href="lenceria">Lenceria\r\n          <span class="option"><span class="name"></span></span>\r\n        </a>\r\n      </li>\r\n      <li class="cass">\r\n        <a href="casual">Casual\r\n          <span class="option"><span class="name"></span></span>\r\n        </a>\r\n      </li>\r\n    </ul>\r\n  </div>', 'Lookbook', '', 'inherit', 'open', 'open', '', '12-revision-v1', '', '', '2013-09-09 11:38:35', '2013-09-09 11:38:35', '', 12, 'http://comosantas.com.ar/12-revision-v1/', 0, 'revision', '', 0),
@@ -790,7 +823,6 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (94, 3, '2013-09-30 18:39:39', '2013-09-30 18:39:39', '', 'thumb1', '', 'inherit', 'open', 'open', '', 'thumb1', '', '', '2013-09-30 18:39:39', '2013-09-30 18:39:39', '', 43, 'http://comosantas.com.ar/wp-content/uploads/2013/09/thumb1.png', 0, 'attachment', 'image/png', 0),
 (75, 2, '2013-09-13 13:56:58', '2013-09-13 13:56:58', '[gallery ids="73,67,64"]', 'casual', '', 'inherit', 'open', 'open', '', '41-autosave-v1', '', '', '2013-09-13 13:56:58', '2013-09-13 13:56:58', '', 41, 'http://comosantas.com.ar/41-autosave-v1/', 0, 'revision', '', 0),
 (100, 5, '2013-10-16 19:59:07', '2013-10-16 19:59:07', '', 'LOGO', '', 'inherit', 'open', 'open', '', 'logo', '', '', '2013-10-16 19:59:07', '2013-10-16 19:59:07', '', 31, 'http://comosantas.com.ar/wp-content/uploads/2013/09/LOGO.jpg', 0, 'attachment', 'image/jpeg', 0),
-(101, 5, '2013-10-18 19:40:12', '2013-10-18 19:40:12', '[gallery columns="9" ids="102,103,104,105,106,107,108,110,113,114,115,116,117,120,121,122,124,125"]', 'Linea Santas', '', 'inherit', 'open', 'open', '', '41-autosave-v1', '', '', '2013-10-18 19:40:12', '2013-10-18 19:40:12', '', 41, 'http://comosantas.com.ar/41-autosave-v1/', 0, 'revision', '', 0),
 (79, 3, '2013-09-13 20:20:58', '2013-09-13 20:20:58', '[gallery ids="46,47,48"]', 'test', '', 'private', 'open', 'open', '', 'test', '', '', '2013-10-18 19:55:53', '2013-10-18 19:55:53', '', 12, 'http://comosantas.com.ar/?page_id=79', 0, 'page', '', 0),
 (80, 3, '2013-09-13 20:20:58', '2013-09-13 20:20:58', '', 'Pagina de desarrollo', '', 'inherit', 'open', 'open', '', '79-revision-v1', '', '', '2013-09-13 20:20:58', '2013-09-13 20:20:58', '', 79, 'http://comosantas.com.ar/79-revision-v1/', 0, 'revision', '', 0),
 (103, 5, '2013-10-18 18:56:24', '2013-10-18 18:56:24', '', '2', '', 'inherit', 'open', 'open', '', '2', '', '', '2013-10-18 18:56:24', '2013-10-18 18:56:24', '', 41, 'http://comosantas.com.ar/wp-content/uploads/2013/09/2.jpg', 0, 'attachment', 'image/jpeg', 0),

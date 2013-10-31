@@ -1140,6 +1140,9 @@ body.verde-verde {
 body.lunares-verde {
   background: url("images/moles_01_bg_tile.jpg") transparent repeat;
 }
+body.lunares {
+  background: url("images/moles_02_bg_tile.png") transparent repeat;
+}
 body div.logo {
   width: 98px;
   height: 160px;
@@ -1259,20 +1262,25 @@ body.page div.pages.quienes-somos div.quienessomos p {
   padding: 10px 15px;
   margin: 0px;
 }
-body.pages div.pages.contacto,
-body.error404 div.pages.contacto,
-body.page div.pages.contacto {
-  background-image: url("images/maquina_mid.jpg");
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  background-position: center center;
+body.pages div.pages.contacto article,
+body.error404 div.pages.contacto article,
+body.page div.pages.contacto article {
+  height: 100%;
+}
+body.pages div.pages.contacto article .subcontent,
+body.error404 div.pages.contacto article .subcontent,
+body.page div.pages.contacto article .subcontent {
+  background: url("images/contacto_splash.jpg") center top no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
+  height: 100%;
 }
 body.pages div.pages.contacto ul,
 body.error404 div.pages.contacto ul,
 body.page div.pages.contacto ul {
-  margin: 200px auto 40px;
+  padding-top: 54%;
+  margin: 0px auto 40px;
   width: 186px;
 }
 body.pages div.pages.contacto ul li,

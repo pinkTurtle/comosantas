@@ -105,6 +105,8 @@ body
     background: url('images/green_bg.jpg') transparent repeat
   &.lunares-verde
     background: url('images/moles_01_bg_tile.jpg') transparent repeat
+  &.lunares
+    background: url('images/moles_02_bg_tile.png') transparent repeat
 
   div.logo
     width: 98px
@@ -193,12 +195,16 @@ body.page
           margin: 0px
 
     &.contacto
-      background-image: url('images/maquina_mid.jpg')
-      background-repeat: no-repeat
-      background-size: cover
-      background-position: center center
+      article
+        height: 100%
+        .subcontent
+          background: url('images/contacto_splash.jpg') center top no-repeat
+          background-size: contain
+          height: 100%
+
       ul
-        margin: 200px auto 40px
+        padding-top: 54%
+        margin: 0px auto 40px
         width: 186px
         li
           width: 25px

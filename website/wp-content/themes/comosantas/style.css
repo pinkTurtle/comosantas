@@ -1191,12 +1191,6 @@ ul#menu-comosantas.nav-menu {
   line-height: 36px;
   font-family: 'Cabin';
 }
-body.pages,
-body.error404,
-body.page {
-  margin: 0px !important;
-  padding: 0px;
-}
 body.pages *,
 body.error404 *,
 body.page * {
@@ -1213,7 +1207,6 @@ body.page * span {
 body.pages div.pages,
 body.error404 div.pages,
 body.page div.pages {
-  padding-top: 1px;
   height: 100%;
 }
 body.pages div.pages article,
@@ -1251,12 +1244,11 @@ body.page div.pages.quienes-somos article .subcontent {
 body.pages div.pages.quienes-somos div.quienessomos,
 body.error404 div.pages.quienes-somos div.quienessomos,
 body.page div.pages.quienes-somos div.quienessomos {
-  width: 32%;
+  width: 25%;
   height: 44%;
   position: absolute;
   top: 23%;
   left: 46%;
-  background-color: rgba(255,255,255,0.3);
   overflow: hidden;
 }
 body.pages div.pages.quienes-somos div.quienessomos p,

@@ -106,7 +106,6 @@ add_shortcode('gallery', 'santas_gallery');
 
 show_admin_bar(false);
 
-
 // removing admin menus en cms
 
 if (!current_user_can( 'manage_options' )) {

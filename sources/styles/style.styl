@@ -105,6 +105,8 @@ body
     background: url('images/green_bg.jpg') transparent repeat
   &.lunares-verde
     background: url('images/moles_01_bg_tile.jpg') transparent repeat
+  &.lunares-verde2
+    background: url('images/moles_03_bg_tile.jpg') transparent repeat
   &.lunares
     background: url('images/moles_02_bg_tile.png') transparent repeat
 
@@ -173,20 +175,20 @@ body.page
       left: 50%
       margin-left: -341px
     &.quienes-somos
-      background-image: url('images/olympus_bg_mid.jpg')
-      background-repeat: no-repeat
-      background-size: cover
-      background-position: center bottom
+      article
+        height: 100%
+        padding-bottom: 0px
+        .subcontent
+          background: url('images/quienessomos_splash.jpg') center top no-repeat
+          background-size: contain
+          height: 100%
       div.quienessomos
-        width: 500px
-        height: 440px
+        width: 32%
+        height: 44%
         position: absolute
-        top: 50%
-        left: 50%
-        margin-top: -220px
-        margin-left: -250px
+        top: 23%
+        left: 46%
         background-color: rgba(255, 255, 255, 0.3);
-        border: 3px solid black;
         overflow: hidden
         p
           text-align: justify
@@ -197,24 +199,26 @@ body.page
     &.contacto
       article
         height: 100%
+        padding-bottom: 0px
         .subcontent
           background: url('images/contacto_splash.jpg') center top no-repeat
           background-size: contain
           height: 100%
-
-      ul
-        padding-top: 54%
-        margin: 0px auto 40px
-        width: 186px
-        li
-          width: 25px
-          height: 25px
-          background-image: url('images/sprite.png')
-          background-position: 0px -207px
-          display: inline-block
-          margin-right: 50px
-          &.last
-            margin: 0px
+          .block
+            position: relative
+            top: 44%
+            ul
+              margin: 0px auto 40px
+              width: 186px
+              li
+                width: 25px
+                height: 25px
+                background-image: url('images/sprite.png')
+                background-position: 0px -207px
+                display: inline-block
+                margin-right: 50px
+                &.last
+                  margin: 0px
       p
         font: 40px/20px waitingsunrise
         font-family: 'Waiting for the Sunrise'

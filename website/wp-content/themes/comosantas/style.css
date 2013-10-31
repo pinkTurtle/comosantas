@@ -1140,6 +1140,9 @@ body.verde-verde {
 body.lunares-verde {
   background: url("images/moles_01_bg_tile.jpg") transparent repeat;
 }
+body.lunares-verde2 {
+  background: url("images/moles_03_bg_tile.jpg") transparent repeat;
+}
 body.lunares {
   background: url("images/moles_02_bg_tile.png") transparent repeat;
 }
@@ -1230,28 +1233,30 @@ body.page div.pages div.splash {
   left: 50%;
   margin-left: -341px;
 }
-body.pages div.pages.quienes-somos,
-body.error404 div.pages.quienes-somos,
-body.page div.pages.quienes-somos {
-  background-image: url("images/olympus_bg_mid.jpg");
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  background-position: center bottom;
+body.pages div.pages.quienes-somos article,
+body.error404 div.pages.quienes-somos article,
+body.page div.pages.quienes-somos article {
+  height: 100%;
+  padding-bottom: 0px;
+}
+body.pages div.pages.quienes-somos article .subcontent,
+body.error404 div.pages.quienes-somos article .subcontent,
+body.page div.pages.quienes-somos article .subcontent {
+  background: url("images/quienessomos_splash.jpg") center top no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
+  height: 100%;
 }
 body.pages div.pages.quienes-somos div.quienessomos,
 body.error404 div.pages.quienes-somos div.quienessomos,
 body.page div.pages.quienes-somos div.quienessomos {
-  width: 500px;
-  height: 440px;
+  width: 32%;
+  height: 44%;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -220px;
-  margin-left: -250px;
+  top: 23%;
+  left: 46%;
   background-color: rgba(255,255,255,0.3);
-  border: 3px solid #000;
   overflow: hidden;
 }
 body.pages div.pages.quienes-somos div.quienessomos p,
@@ -1266,6 +1271,7 @@ body.pages div.pages.contacto article,
 body.error404 div.pages.contacto article,
 body.page div.pages.contacto article {
   height: 100%;
+  padding-bottom: 0px;
 }
 body.pages div.pages.contacto article .subcontent,
 body.error404 div.pages.contacto article .subcontent,
@@ -1276,16 +1282,21 @@ body.page div.pages.contacto article .subcontent {
   background-size: contain;
   height: 100%;
 }
-body.pages div.pages.contacto ul,
-body.error404 div.pages.contacto ul,
-body.page div.pages.contacto ul {
-  padding-top: 54%;
+body.pages div.pages.contacto article .subcontent .block,
+body.error404 div.pages.contacto article .subcontent .block,
+body.page div.pages.contacto article .subcontent .block {
+  position: relative;
+  top: 44%;
+}
+body.pages div.pages.contacto article .subcontent .block ul,
+body.error404 div.pages.contacto article .subcontent .block ul,
+body.page div.pages.contacto article .subcontent .block ul {
   margin: 0px auto 40px;
   width: 186px;
 }
-body.pages div.pages.contacto ul li,
-body.error404 div.pages.contacto ul li,
-body.page div.pages.contacto ul li {
+body.pages div.pages.contacto article .subcontent .block ul li,
+body.error404 div.pages.contacto article .subcontent .block ul li,
+body.page div.pages.contacto article .subcontent .block ul li {
   width: 25px;
   height: 25px;
   background-image: url("images/sprite.png");
@@ -1293,9 +1304,9 @@ body.page div.pages.contacto ul li {
   display: inline-block;
   margin-right: 50px;
 }
-body.pages div.pages.contacto ul li.last,
-body.error404 div.pages.contacto ul li.last,
-body.page div.pages.contacto ul li.last {
+body.pages div.pages.contacto article .subcontent .block ul li.last,
+body.error404 div.pages.contacto article .subcontent .block ul li.last,
+body.page div.pages.contacto article .subcontent .block ul li.last {
   margin: 0px;
 }
 body.pages div.pages.contacto p,

@@ -1251,11 +1251,12 @@ body.page div.pages.quienes-somos article .subcontent {
 body.pages div.pages.quienes-somos div.quienessomos,
 body.error404 div.pages.quienes-somos div.quienessomos,
 body.page div.pages.quienes-somos div.quienessomos {
-  width: 75%;
-  height: 66%;
+  width: 25%;
+  height: 44%;
+  position: absolute;
+  top: 23%;
+  left: 46%;
   overflow: hidden;
-  padding-left: 46%;
-  padding-top: 18%;
 }
 body.pages div.pages.quienes-somos div.quienessomos p,
 body.error404 div.pages.quienes-somos div.quienessomos p,

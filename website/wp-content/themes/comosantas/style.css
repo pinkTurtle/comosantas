@@ -1213,7 +1213,6 @@ body.page * span {
 body.pages div.pages,
 body.error404 div.pages,
 body.page div.pages {
-  padding-top: 1px;
   height: 100%;
 }
 body.pages div.pages article,
@@ -1253,7 +1252,7 @@ body.error404 div.pages.quienes-somos div.quienessomos,
 body.page div.pages.quienes-somos div.quienessomos {
   width: 25%;
   height: 44%;
-  position: absolute;
+  position: relative;
   top: 23%;
   left: 46%;
   overflow: hidden;

@@ -35,6 +35,10 @@ $(".quienessomos").perfectScrollbar({
   minScrollbarLength: 20
 })
 
+if ($('.quienessomos')) {
+  var h = $('.quienessomos').height();
+  $('.quienessomos').css('width', h * 0.8);
+};
 
 });
 </script>

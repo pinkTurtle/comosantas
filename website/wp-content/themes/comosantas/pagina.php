@@ -37,7 +37,7 @@ $(".quienessomos").perfectScrollbar({
 
 if ($('.quienessomos')) {
   var h = $('.quienessomos').height();
-  $('.quienessomos').css('width', h * 0.8);
+  $('.quienessomos').css('width', h * 0.77);
 };
 
 });

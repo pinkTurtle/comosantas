@@ -183,16 +183,17 @@ body.page
           height: 100%
       div.quienessomos
         width: 25%
-        height: 44%
+        height: 42%
         position: relative
         top: 23%
-        left: 46%
+        left: 47.5%
         overflow: hidden
         p
           text-align: justify
           font: 18px/24px arial;
           padding: 10px 15px
           margin: 0px
+          color: #241f20
 
     &.contacto
       article
@@ -452,3 +453,6 @@ div#navbar.navbar
       font-size: 16px
       transition: width 1s, font-size 1s cubic-bezier(0.95, 0.05, 0.795, 0.035)
 
+@media screen and (max-height: 768px)
+  .quienessomos
+    left: 48%

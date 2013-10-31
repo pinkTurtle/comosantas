@@ -1251,10 +1251,10 @@ body.pages div.pages.quienes-somos div.quienessomos,
 body.error404 div.pages.quienes-somos div.quienessomos,
 body.page div.pages.quienes-somos div.quienessomos {
   width: 25%;
-  height: 44%;
+  height: 42%;
   position: relative;
   top: 23%;
-  left: 46%;
+  left: 47.5%;
   overflow: hidden;
 }
 body.pages div.pages.quienes-somos div.quienessomos p,
@@ -1264,6 +1264,7 @@ body.page div.pages.quienes-somos div.quienessomos p {
   font: 18px/24px arial;
   padding: 10px 15px;
   margin: 0px;
+  color: #241f20;
 }
 body.pages div.pages.contacto article,
 body.error404 div.pages.contacto article,
@@ -1723,4 +1724,9 @@ div#navbar.navbar:hover nav.main-navigation {
   -o-transition: width 1s, font-size 1s cubic-bezier(0.95, 0.05, 0.795, 0.035);
   -ms-transition: width 1s, font-size 1s cubic-bezier(0.95, 0.05, 0.795, 0.035);
   transition: width 1s, font-size 1s cubic-bezier(0.95, 0.05, 0.795, 0.035);
+}
+@media screen and (max-height: 768px) {
+  .quienessomos {
+    left: 48%;
+  }
 }

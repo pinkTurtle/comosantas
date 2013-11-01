@@ -1224,13 +1224,13 @@ body.pages div.pages div.splash,
 body.error404 div.pages div.splash,
 body.page div.pages div.splash {
   background-image: url("images/somos_como_santas.png");
-  height: 728px;
-  width: 682px;
+  height: 700px;
+  width: 647px;
   position: absolute;
   top: 50%;
-  margin-top: -364px;
+  margin-top: -350px;
   left: 50%;
-  margin-left: -341px;
+  margin-left: -323px;
 }
 body.pages div.pages.quienes-somos article,
 body.error404 div.pages.quienes-somos article,

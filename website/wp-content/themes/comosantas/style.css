@@ -1241,27 +1241,26 @@ body.page div.pages.quienes-somos article {
 body.pages div.pages.quienes-somos article .subcontent,
 body.error404 div.pages.quienes-somos article .subcontent,
 body.page div.pages.quienes-somos article .subcontent {
-  background: url("images/quienessomos_splash.jpg") center top no-repeat;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  background-size: contain;
+  background: url("images/quienessomos_splash.jpg") center center no-repeat;
   height: 100%;
 }
 body.pages div.pages.quienes-somos div.quienessomos,
 body.error404 div.pages.quienes-somos div.quienessomos,
 body.page div.pages.quienes-somos div.quienessomos {
-  width: 25%;
-  height: 42%;
-  position: relative;
-  top: 23%;
-  left: 47.5%;
+  width: 280px;
+  height: 360px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
   overflow: hidden;
+  margin-left: -35px;
+  margin-top: -240px;
 }
 body.pages div.pages.quienes-somos div.quienessomos p,
 body.error404 div.pages.quienes-somos div.quienessomos p,
 body.page div.pages.quienes-somos div.quienessomos p {
   text-align: justify;
-  font: 18px/24px arial;
+  font: 16px/22px arial;
   padding: 10px 15px;
   margin: 0px;
   color: #241f20;
@@ -1275,10 +1274,7 @@ body.page div.pages.contacto article {
 body.pages div.pages.contacto article .subcontent,
 body.error404 div.pages.contacto article .subcontent,
 body.page div.pages.contacto article .subcontent {
-  background: url("images/contacto_splash.jpg") center top no-repeat;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  background-size: contain;
+  background: url("images/contacto_splash.jpg") center center no-repeat;
   height: 100%;
 }
 body.pages div.pages.contacto article .subcontent .block,
@@ -1724,9 +1720,4 @@ div#navbar.navbar:hover nav.main-navigation {
   -o-transition: width 1s, font-size 1s cubic-bezier(0.95, 0.05, 0.795, 0.035);
   -ms-transition: width 1s, font-size 1s cubic-bezier(0.95, 0.05, 0.795, 0.035);
   transition: width 1s, font-size 1s cubic-bezier(0.95, 0.05, 0.795, 0.035);
-}
-@media screen and (max-height: 768px) {
-  .quienessomos {
-    left: 48%;
-  }
 }

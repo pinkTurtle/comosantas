@@ -16,7 +16,7 @@ Template Name: Pagina inicial
     #galleria { 
       height: 320px;
       background: #fff;
-      margin: 101px auto 20px;
+      margin: 181px auto 20px;
       -moz-box-sizing: content-box;
       box-sizing: content-box;
       width: auto;

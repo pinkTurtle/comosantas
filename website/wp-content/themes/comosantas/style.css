@@ -1214,6 +1214,8 @@ body.pages div.pages,
 body.error404 div.pages,
 body.page div.pages {
   height: 100%;
+  min-height: 800px;
+  position: relative;
 }
 body.pages div.pages article,
 body.error404 div.pages article,
@@ -1264,6 +1266,11 @@ body.page div.pages.quienes-somos div.quienessomos p {
   padding: 10px 15px;
   margin: 0px;
   color: #241f20;
+}
+body.pages div.pages.contacto,
+body.error404 div.pages.contacto,
+body.page div.pages.contacto {
+  min-height: 900px;
 }
 body.pages div.pages.contacto article,
 body.error404 div.pages.contacto article,

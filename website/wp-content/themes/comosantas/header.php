@@ -30,7 +30,7 @@
   <script src="<?php echo get_bloginfo('url'); ?>/wp-content/themes/comosantas/js/galleria-1.2.9.js"></script>
   <script src="<?php echo get_bloginfo('url'); ?>/wp-content/themes/comosantas/js/perfect-scrollbar.js"></script>
   <script src="<?php echo get_bloginfo('url'); ?>/wp-content/themes/comosantas/js/jquery.mousewheel.js"></script>
-  <link rel="shortcut icon" href="favicon.ico" type="image/icon">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<!--[if lt IE 9]>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
 	<![endif]-->

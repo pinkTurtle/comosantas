@@ -1289,7 +1289,7 @@ body.pages div.pages.contacto article .subcontent .block,
 body.error404 div.pages.contacto article .subcontent .block,
 body.page div.pages.contacto article .subcontent .block {
   position: relative;
-  top: 44%;
+  top: 37%;
 }
 body.pages div.pages.contacto article .subcontent .block ul,
 body.error404 div.pages.contacto article .subcontent .block ul,
@@ -1315,7 +1315,7 @@ body.page div.pages.contacto article .subcontent .block ul li.last {
 body.pages div.pages.contacto p,
 body.error404 div.pages.contacto p,
 body.page div.pages.contacto p {
-  font: 40px/20px waitingsunrise;
+  font: 35px/20px waitingsunrise;
   font-family: 'Waiting for the Sunrise';
   color: #fff;
   text-align: center;

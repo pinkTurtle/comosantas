@@ -7,8 +7,8 @@ get_header();
 ?>
 <style>
     #galleria { 
-      width: 595px;
-      height: 385px;
+      width: 385px;
+      height: 595px;
       background: #fff;
       margin: 20px auto;
       border-top: 30px solid white;
@@ -65,16 +65,15 @@ if ($lookbook->ID == $post->post_parent) {
     //echo $post->post_content;
   ?> 
 
-		<?php if ( have_posts() ) : ?>
-			<?php /* The loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
-				<?php get_template_part( 'content', get_post_format() ); ?>
-			<?php endwhile; ?>
+    <?php if ( have_posts() ) : ?>
+      <?php /* The loop */ ?>
+      <?php while ( have_posts() ) : the_post(); ?>
+        <?php get_template_part( 'content', get_post_format() ); ?>
+      <?php endwhile; ?>
 
-		<?php else : ?>
-			<?php get_template_part( 'content', 'none' ); ?>
-		<?php endif; ?>
-
+    <?php else : ?>
+      <?php get_template_part( 'content', 'none' ); ?>
+    <?php endif; ?>
 
 <?php if(is_page($lookbook->ID)) { ?>
 
